@@ -1,0 +1,15 @@
+Operator:     subtoar
+Label:        Substance To Arnold
+Path:         oplib:/Vop/subtoar?Vop/subtoar
+Icon:         opdef:/Vop/subtoar?IconImage
+Table:        Vop
+License:      
+Extra:        
+User:         
+Inputs:       0 to 0
+Outputs:      2048
+Subnet:       true
+Python:       false
+Empty:        false
+Modified:     Wed Jan 10 16:53:01 2018
+

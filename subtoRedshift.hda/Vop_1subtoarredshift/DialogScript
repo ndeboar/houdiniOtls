@@ -1,0 +1,30 @@
+# Dialog script for subtoarredshift automatically generated
+
+{
+    name	subtoarredshift
+    script	subtoarredshift
+    label	"Substance to Redshift"
+
+    output	color	outColor	outColor
+    output	vector	outDisplacementVector	outDisplacementVector
+    signature	"Default Inputs"	default	{ color vector }
+
+    outputoverrides	default
+    {
+	___begin	auto
+			(0,0,0)
+	___begin	auto
+			(0,0,0)
+    }
+
+    help {
+	""
+    }
+
+    parm {
+	name	"texPath"
+	label	"Texture Path"
+	type	image
+	default	{ "" }
+    }
+}

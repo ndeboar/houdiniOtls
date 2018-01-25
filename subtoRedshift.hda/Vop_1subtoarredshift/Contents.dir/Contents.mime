@@ -1,0 +1,2368 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY"
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="node_type"
+Content-Type: text/plain
+
+Vop
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.init"
+Content-Type: text/plain
+
+type = subtoarredshift
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.def"
+Content-Type: text/plain
+
+comment ""
+position -3.72353 -0.928235
+connectornextid 0
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516333178
+  modify 1516333217
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.outputinfos"
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+
+TnVtSW5mb3MgMgpWYWx1ZXNCaW5hcnkgMQpCZWdpbkluZm8KT3V0cHV0TmFtZSBvdXRDb2xvcgpEZWJ1Z0NvcnJJbnB1dE5hbWUgX19kZWZhdWx0X18KQnlwYXNzQ29ycklucHV0TmFtZSBfX2RlZmF1bHRfXwpOb3JtYWxNb2Q=
+ZSAwCkJ5cGFzc01vZGUgMgpVc2VEZWZhdWx0VmFsdWUgMQpFbmRJbmZvCgAAAAAAAAAAQmVnaW5JbmZvCk91dHB1dE5hbWUgb3V0RGlzcGxhY2VtZW50VmVjdG9yCkRlYnVnQ29ycklucHV0TmFtZSBfX2RlZmF1bHRfXwpCeXA=
+YXNzQ29ycklucHV0TmFtZSBfX2RlZmF1bHRfXwpOb3JtYWxNb2RlIDAKQnlwYXNzTW9kZSAyClVzZURlZmF1bHRWYWx1ZSAxCkVuZEluZm8KAAAAAAAAAAA=
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Material1.init"
+Content-Type: text/plain
+
+type = redshift::Material
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Material1.def"
+Content-Type: text/plain
+
+comment ""
+position -3.9 0.107059
+connectornextid 16
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+0 "outColor"
+}
+inputsNamed3
+{
+1 	BaseColor 0 1 "diffuse_color"
+2 	"" "" 1 "diffuse_weight"
+3 	"" "" 1 "diffuse_roughness"
+4 	"" "" 1 "transl_color"
+5 	"" "" 1 "transl_weight"
+6 	"" "" 1 "refl_color"
+7 	"" "" 1 "refl_weight"
+8 	RSColorSplitter2 1 1 "refl_roughness"
+9 	"" "" 1 "refl_aniso"
+10 	"" "" 1 "refl_aniso_rotation"
+11 	"" "" 1 "refl_reflectivity"
+12 	"" "" 1 "refl_edge_tint"
+13 	"" "" 1 "refl_ior3"
+14 	"" "" 1 "refl_k3"
+15 	RSColorSplitter1 1 1 "refl_metalness"
+}
+inputs
+{
+0 	BaseColor 0 1
+1 	"" 0 1
+2 	"" 0 1
+3 	"" 0 1
+4 	"" 0 1
+5 	"" 0 1
+6 	"" 0 1
+7 	RSColorSplitter2 0 1
+8 	"" 0 1
+9 	"" 0 1
+10 	"" 0 1
+11 	"" 0 1
+12 	"" 0 1
+13 	"" 0 1
+14 	RSColorSplitter1 0 1
+}
+stat
+{
+  create 1516324082
+  modify 1516333217
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Material1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+RS_shaderNodeMainSwitcher	[ 0	locks=0 ]	(	0	0	0	0	0	0	)
+preset	[ 0	locks=0 ]	(	-1	)
+Diffuse_0	[ 0	locks=0 ]	(	0	)
+diffuse_color	[ 0	locks=0 ]	(	0.5	0.5	0.5	)
+diffuse_weight	[ 0	locks=0 ]	(	1	)
+diffuse_roughness	[ 0	locks=0 ]	(	0	)
+Back_lighting/Translucency_1	[ 0	locks=0 ]	(	0	)
+transl_color	[ 0	locks=0 ]	(	0.5	0.5	0.5	)
+transl_weight	[ 0	locks=0 ]	(	0	)
+Reflection_2	[ 0	locks=0 ]	(	0	)
+refl_color	[ 0	locks=0 ]	(	1	1	1	)
+refl_weight	[ 0	locks=0 ]	(	1	)
+refl_roughness	[ 0	locks=0 ]	(	0	)
+refl_samples	[ 0	locks=0 ]	(	16	)
+refl_brdf	[ 0	locks=0 ]	(	1	)
+refl_aniso	[ 0	locks=0 ]	(	0	)
+refl_aniso_rotation	[ 0	locks=0 ]	(	0	)
+refl_fresnel_mode	[ 0	locks=0 ]	(	2	)
+refl_reflectivity	[ 0	locks=0 ]	(	0.039999999105930328	0.039999999105930328	0.039999999105930328	)
+refl_edge_tint	[ 0	locks=0 ]	(	0	0	0	)
+refl_ior3	[ 0	locks=0 ]	(	1.5	1.5	1.5	)
+refl_k3	[ 0	locks=0 ]	(	0	0	0	)
+refl_metalness	[ 0	locks=0 ]	(	0	)
+refl_ior	[ 0	locks=0 ]	(	1.5	)
+Refraction/Transmission_3	[ 0	locks=0 ]	(	0	)
+refr_color	[ 0	locks=0 ]	(	1	1	1	)
+refr_weight	[ 0	locks=0 ]	(	0	)
+refr_roughness	[ 0	locks=0 ]	(	0	)
+refr_samples	[ 0	locks=0 ]	(	8	)
+refr_ior	[ 0	locks=0 ]	(	1.5	)
+refr_use_base_IOR	[ 0	locks=0 ]	(	"on"	)
+refr_abbe	[ 0	locks=0 ]	(	0	)
+refr_thin_walled	[ 0	locks=0 ]	(	"off"	)
+Sub_Surface_4	[ 0	locks=0 ]	(	0	)
+ss_unitsMode	[ 0	locks=0 ]	(	0	)
+refr_transmittance	[ 0	locks=0 ]	(	1	1	1	)
+refr_absorption_scale	[ 0	locks=0 ]	(	1	)
+ss_extinction_coeff	[ 0	locks=0 ]	(	0	0	0	)
+ss_extinction_scale	[ 0	locks=0 ]	(	1	)
+ss_scatter_coeff	[ 0	locks=0 ]	(	1	1	1	)
+ss_amount	[ 0	locks=0 ]	(	0	)
+ss_phase	[ 0	locks=0 ]	(	0	)
+ss_samples	[ 0	locks=0 ]	(	16	)
+General_5	[ 0	locks=0 ]	(	0	)
+ms_amount	[ 0	locks=0 ]	(	0	)
+ms_radius_scale	[ 0	locks=0 ]	(	1	)
+Layer_1_6	[ 0	locks=0 ]	(	0	)
+ms_color0	[ 0	locks=0 ]	(	1	0.89999997615814209	0.69999998807907104	)
+ms_weight0	[ 0	locks=0 ]	(	1	)
+ms_radius0	[ 0	locks=0 ]	(	1	)
+Layer_2_7	[ 0	locks=0 ]	(	0	)
+ms_color1	[ 0	locks=0 ]	(	1	0.89999997615814209	0.69999998807907104	)
+ms_weight1	[ 0	locks=0 ]	(	0	)
+ms_radius1	[ 0	locks=0 ]	(	1	)
+Layer_3_8	[ 0	locks=0 ]	(	0	)
+ms_color2	[ 0	locks=0 ]	(	1	0.89999997615814209	0.69999998807907104	)
+ms_weight2	[ 0	locks=0 ]	(	0	)
+ms_radius2	[ 0	locks=0 ]	(	1	)
+General_9	[ 0	locks=0 ]	(	0	)
+coat_color	[ 0	locks=0 ]	(	1	1	1	)
+coat_weight	[ 0	locks=0 ]	(	0	)
+coat_roughness	[ 0	locks=0 ]	(	0	)
+coat_samples	[ 0	locks=0 ]	(	16	)
+coat_brdf	[ 0	locks=0 ]	(	0	)
+coat_fresnel_mode	[ 0	locks=0 ]	(	3	)
+coat_reflectivity	[ 0	locks=0 ]	(	0.027000000700354576	0.027000000700354576	0.027000000700354576	)
+coat_ior3	[ 0	locks=0 ]	(	1.3999999761581421	1.3999999761581421	1.3999999761581421	)
+coat_ior	[ 0	locks=0 ]	(	1.3999999761581421	)
+Advanced_10	[ 0	locks=0 ]	(	0	)
+coat_transmittance	[ 0	locks=0 ]	(	1	1	1	)
+coat_thickness	[ 0	locks=0 ]	(	0.10000000149011612	)
+coat_bump_input	[ 0	locks=0 ]	(	0	)
+overall_color	[ 0	locks=0 ]	(	1	1	1	)
+opacity_color	[ 0	locks=0 ]	(	1	1	1	)
+emission_color	[ 0	locks=0 ]	(	0	0	0	)
+emission_weight	[ 0	locks=0 ]	(	0	)
+bump_input	[ 0	locks=0 ]	(	0	)
+depth_override	[ 0	locks=0 ]	(	"off"	)
+combined_depth	[ 0	locks=0 ]	(	6	)
+Reflection_11	[ 0	locks=0 ]	(	0	)
+refl_depth	[ 0	locks=0 ]	(	3	)
+refl_enablecutoff	[ 0	locks=0 ]	(	"off"	)
+refl_cutoff	[ 0	locks=0 ]	(	0.0099999997764825821	)
+skip_inside_refl	[ 0	locks=0 ]	(	"on"	)
+Refraction_12	[ 0	locks=0 ]	(	0	)
+refr_depth	[ 0	locks=0 ]	(	5	)
+refr_enablecutoff	[ 0	locks=0 ]	(	"off"	)
+refr_cutoff	[ 0	locks=0 ]	(	0.0099999997764825821	)
+energyCompMode	[ 0	locks=0 ]	(	1	)
+overallAffectsEmission	[ 0	locks=0 ]	(	"off"	)
+Diffuse_13	[ 0	locks=0 ]	(	0	)
+diffuse_direct	[ 0	locks=0 ]	(	1	)
+diffuse_indirect	[ 0	locks=0 ]	(	1	)
+Reflection_14	[ 0	locks=0 ]	(	0	)
+refl_direct	[ 0	locks=0 ]	(	1	)
+refl_indirect	[ 0	locks=0 ]	(	1	)
+refl_isGlossiness	[ 0	locks=0 ]	(	"off"	)
+Coating_15	[ 0	locks=0 ]	(	0	)
+coat_direct	[ 0	locks=0 ]	(	1	)
+coat_indirect	[ 0	locks=0 ]	(	1	)
+coat_isGlossiness	[ 0	locks=0 ]	(	"off"	)
+Refraction_16	[ 0	locks=0 ]	(	0	)
+refr_isGlossiness	[ 0	locks=0 ]	(	"off"	)
+decoupleIORFromRoughness	[ 0	locks=0 ]	(	"off"	)
+shadow_opacity	[ 0	locks=0 ]	(	0	)
+affects_alpha	[ 0	locks=0 ]	(	"on"	)
+block_volumes	[ 0	locks=0 ]	(	"on"	)
+Anisotropy_17	[ 0	locks=0 ]	(	0	)
+anisotropy_orientation	[ 0	locks=0 ]	(	2	)
+anisotropy_uvChannel	[ 0	locks=0 ]	(	uv	)
+anisotropy_tangentChannel	[ 0	locks=0 ]	(	tangent	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Material1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Advanced":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Coating":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Optimizations":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Overall":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Sub-Surface Multiple Scattering":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BaseColor.init"
+Content-Type: text/plain
+
+type = redshift::TextureSampler
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BaseColor.def"
+Content-Type: text/plain
+
+comment ""
+position -8.72858 0.107059
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+0 "outColor"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516324107
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage python
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BaseColor.spareparmdef"
+Content-Type: text/plain
+
+    parm {
+	name	"subTex"
+	label	"Substance Texture"
+	type	string
+	default	{ "" }
+    }
+    group {
+	name	"RS_shaderNodeMainSwitcher4"
+	label	"General"
+
+	groupsimple {
+	    name	"Image_1"
+	    label	"Image"
+
+	    parm {
+		name	"tex0"
+		baseparm
+		label	"Filename"
+		export	none
+	    }
+	    groupsimple {
+		name	"Gamma_Override_2"
+		label	"Gamma Override"
+
+		parm {
+		    name	"tex0_gammaoverride"
+		    baseparm
+		    label	"Enable"
+		    export	none
+		}
+		parm {
+		    name	"tex0_srgb"
+		    baseparm
+		    label	"sRGB"
+		    export	none
+		}
+		parm {
+		    name	"tex0_gamma"
+		    baseparm
+		    label	"Gamma"
+		    export	none
+		}
+	    }
+
+	}
+
+	groupsimple {
+	    name	"UV_3"
+	    label	"UV"
+
+	    parm {
+		name	"tspace_id"
+		baseparm
+		label	"UV Channel"
+		export	none
+	    }
+	    parm {
+		name	"mirrorU"
+		baseparm
+		label	"Mirror U"
+		export	none
+	    }
+	    parm {
+		name	"mirrorV"
+		baseparm
+		label	"Mirror V"
+		export	none
+	    }
+	    parm {
+		name	"wrapU"
+		baseparm
+		label	"Wrap U"
+		export	none
+	    }
+	    parm {
+		name	"wrapV"
+		baseparm
+		label	"Wrap V"
+		export	none
+	    }
+	    groupsimple {
+		name	"Remap_4"
+		label	"Remap"
+
+		parm {
+		    name	"scale"
+		    baseparm
+		    label	"Scale"
+		    export	none
+		}
+		parm {
+		    name	"offset"
+		    baseparm
+		    label	"Offset"
+		    export	none
+		}
+		parm {
+		    name	"rotate"
+		    baseparm
+		    label	"Rotate"
+		    export	none
+		}
+	    }
+
+	}
+
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_1"
+	label	"Adjust"
+
+	parm {
+	    name	"color_multiplier"
+	    baseparm
+	    label	"Color Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"color_offset"
+	    baseparm
+	    label	"Color Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_multiplier"
+	    baseparm
+	    label	"Alpha Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"alpha_offset"
+	    baseparm
+	    label	"Alpha Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_is_luminance"
+	    baseparm
+	    label	"Alpha Is Luminance"
+	    export	none
+	}
+	parm {
+	    name	"invalid_color"
+	    baseparm
+	    label	"Default/Invalid Color"
+	    export	none
+	}
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_2"
+	label	"Advanced"
+
+	parm {
+	    name	"filter_enable_type"
+	    baseparm
+	    label	"Filter Enable"
+	    export	none
+	}
+	parm {
+	    name	"filter_bicubic"
+	    baseparm
+	    label	"Bicubic Filtering"
+	    export	none
+	}
+	parm {
+	    name	"prefer_sharp"
+	    baseparm
+	    label	"Prefer Sharp Filtering"
+	    export	none
+	}
+	parm {
+	    name	"mip_bias"
+	    baseparm
+	    label	"Mip Bias"
+	    export	none
+	}
+    }
+
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BaseColor.chn"
+Content-Type: text/plain
+
+{
+    channel tex0 {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = "node = hou.node('..')
+foo = node.hdaModule().getPath(ch('subTex'))
+#foo = 'bar'
+return foo" language = python }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BaseColor.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+RS_shaderNodeMainSwitcher	[ 0	locks=0 ]	(	0	0	0	)
+Image_0	[ 0	locks=0 ]	(	0	)
+tex0	[ 8	locks=0 ]	(	[ tex0	/_BaseColor.exr ] 	)
+Gamma_Override_1	[ 0	locks=0 ]	(	0	)
+tex0_gammaoverride	[ 0	locks=0 ]	(	"on"	)
+tex0_srgb	[ 0	locks=0 ]	(	"on"	)
+tex0_gamma	[ 0	locks=0 ]	(	1	)
+UV_2	[ 0	locks=0 ]	(	0	)
+tspace_id	[ 0	locks=0 ]	(	uv	)
+mirrorU	[ 0	locks=0 ]	(	"off"	)
+mirrorV	[ 0	locks=0 ]	(	"off"	)
+wrapU	[ 0	locks=0 ]	(	"on"	)
+wrapV	[ 0	locks=0 ]	(	"on"	)
+Remap_3	[ 0	locks=0 ]	(	0	)
+scale	[ 0	locks=0 ]	(	1	1	)
+offset	[ 0	locks=0 ]	(	0	0	)
+rotate	[ 0	locks=0 ]	(	0	)
+color_multiplier	[ 0	locks=0 ]	(	1	1	1	)
+color_offset	[ 0	locks=0 ]	(	0	0	0	)
+alpha_multiplier	[ 0	locks=0 ]	(	1	)
+alpha_offset	[ 0	locks=0 ]	(	0	)
+alpha_is_luminance	[ 0	locks=0 ]	(	"off"	)
+invalid_color	[ 0	locks=0 ]	(	0	0	0	0	)
+filter_enable_type	[ 0	locks=0 ]	(	2	)
+filter_bicubic	[ 0	locks=0 ]	(	"off"	)
+prefer_sharp	[ 0	locks=0 ]	(	"on"	)
+mip_bias	[ 0	locks=0 ]	(	0	)
+subTex	[ 0	locks=0 ]	(	$OS	)
+RS_shaderNodeMainSwitcher4	[ 0	locks=0 ]	(	0	0	0	)
+Image_1	[ 0	locks=0 ]	(	0	)
+Gamma_Override_2	[ 0	locks=0 ]	(	0	)
+UV_3	[ 0	locks=0 ]	(	0	)
+Remap_4	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BaseColor.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Adjust":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Advanced":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_General":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/suboutput1.init"
+Content-Type: text/plain
+
+type = suboutput
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/suboutput1.def"
+Content-Type: text/plain
+
+comment ""
+position 0 0
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+}
+inputsNamed3
+{
+0 	Material1 0 1 "outColor"
+1 	BumpBlender1 2 1 "outDisplacementVector"
+}
+inputs
+{
+0 	Material1 0 1
+1 	BumpBlender1 0 1
+}
+stat
+{
+  create 1516324180
+  modify 1516333217
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/suboutput1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+name1	[ 0	locks=0 ]	(	""	)
+label1	[ 0	locks=0 ]	(	""	)
+name2	[ 0	locks=0 ]	(	""	)
+label2	[ 0	locks=0 ]	(	""	)
+name3	[ 0	locks=0 ]	(	""	)
+label3	[ 0	locks=0 ]	(	""	)
+name4	[ 0	locks=0 ]	(	""	)
+label4	[ 0	locks=0 ]	(	""	)
+name5	[ 0	locks=0 ]	(	""	)
+label5	[ 0	locks=0 ]	(	""	)
+name6	[ 0	locks=0 ]	(	""	)
+label6	[ 0	locks=0 ]	(	""	)
+name7	[ 0	locks=0 ]	(	""	)
+label7	[ 0	locks=0 ]	(	""	)
+name8	[ 0	locks=0 ]	(	""	)
+label8	[ 0	locks=0 ]	(	""	)
+name9	[ 0	locks=0 ]	(	""	)
+label9	[ 0	locks=0 ]	(	""	)
+name10	[ 0	locks=0 ]	(	""	)
+label10	[ 0	locks=0 ]	(	""	)
+name11	[ 0	locks=0 ]	(	""	)
+label11	[ 0	locks=0 ]	(	""	)
+name12	[ 0	locks=0 ]	(	""	)
+label12	[ 0	locks=0 ]	(	""	)
+name13	[ 0	locks=0 ]	(	""	)
+label13	[ 0	locks=0 ]	(	""	)
+name14	[ 0	locks=0 ]	(	""	)
+label14	[ 0	locks=0 ]	(	""	)
+name15	[ 0	locks=0 ]	(	""	)
+label15	[ 0	locks=0 ]	(	""	)
+name16	[ 0	locks=0 ]	(	""	)
+label16	[ 0	locks=0 ]	(	""	)
+name17	[ 0	locks=0 ]	(	""	)
+label17	[ 0	locks=0 ]	(	""	)
+name18	[ 0	locks=0 ]	(	""	)
+label18	[ 0	locks=0 ]	(	""	)
+name19	[ 0	locks=0 ]	(	""	)
+label19	[ 0	locks=0 ]	(	""	)
+name20	[ 0	locks=0 ]	(	""	)
+label20	[ 0	locks=0 ]	(	""	)
+name21	[ 0	locks=0 ]	(	""	)
+label21	[ 0	locks=0 ]	(	""	)
+name22	[ 0	locks=0 ]	(	""	)
+label22	[ 0	locks=0 ]	(	""	)
+name23	[ 0	locks=0 ]	(	""	)
+label23	[ 0	locks=0 ]	(	""	)
+name24	[ 0	locks=0 ]	(	""	)
+label24	[ 0	locks=0 ]	(	""	)
+name25	[ 0	locks=0 ]	(	""	)
+label25	[ 0	locks=0 ]	(	""	)
+name26	[ 0	locks=0 ]	(	""	)
+label26	[ 0	locks=0 ]	(	""	)
+name27	[ 0	locks=0 ]	(	""	)
+label27	[ 0	locks=0 ]	(	""	)
+name28	[ 0	locks=0 ]	(	""	)
+label28	[ 0	locks=0 ]	(	""	)
+name29	[ 0	locks=0 ]	(	""	)
+label29	[ 0	locks=0 ]	(	""	)
+name30	[ 0	locks=0 ]	(	""	)
+label30	[ 0	locks=0 ]	(	""	)
+name31	[ 0	locks=0 ]	(	""	)
+label31	[ 0	locks=0 ]	(	""	)
+name32	[ 0	locks=0 ]	(	""	)
+label32	[ 0	locks=0 ]	(	""	)
+name33	[ 0	locks=0 ]	(	""	)
+label33	[ 0	locks=0 ]	(	""	)
+name34	[ 0	locks=0 ]	(	""	)
+label34	[ 0	locks=0 ]	(	""	)
+name35	[ 0	locks=0 ]	(	""	)
+label35	[ 0	locks=0 ]	(	""	)
+name36	[ 0	locks=0 ]	(	""	)
+label36	[ 0	locks=0 ]	(	""	)
+name37	[ 0	locks=0 ]	(	""	)
+label37	[ 0	locks=0 ]	(	""	)
+name38	[ 0	locks=0 ]	(	""	)
+label38	[ 0	locks=0 ]	(	""	)
+name39	[ 0	locks=0 ]	(	""	)
+label39	[ 0	locks=0 ]	(	""	)
+name40	[ 0	locks=0 ]	(	""	)
+label40	[ 0	locks=0 ]	(	""	)
+name41	[ 0	locks=0 ]	(	""	)
+label41	[ 0	locks=0 ]	(	""	)
+name42	[ 0	locks=0 ]	(	""	)
+label42	[ 0	locks=0 ]	(	""	)
+name43	[ 0	locks=0 ]	(	""	)
+label43	[ 0	locks=0 ]	(	""	)
+name44	[ 0	locks=0 ]	(	""	)
+label44	[ 0	locks=0 ]	(	""	)
+name45	[ 0	locks=0 ]	(	""	)
+label45	[ 0	locks=0 ]	(	""	)
+name46	[ 0	locks=0 ]	(	""	)
+label46	[ 0	locks=0 ]	(	""	)
+name47	[ 0	locks=0 ]	(	""	)
+label47	[ 0	locks=0 ]	(	""	)
+name48	[ 0	locks=0 ]	(	""	)
+label48	[ 0	locks=0 ]	(	""	)
+name49	[ 0	locks=0 ]	(	""	)
+label49	[ 0	locks=0 ]	(	""	)
+name50	[ 0	locks=0 ]	(	""	)
+label50	[ 0	locks=0 ]	(	""	)
+name51	[ 0	locks=0 ]	(	""	)
+label51	[ 0	locks=0 ]	(	""	)
+name52	[ 0	locks=0 ]	(	""	)
+label52	[ 0	locks=0 ]	(	""	)
+name53	[ 0	locks=0 ]	(	""	)
+label53	[ 0	locks=0 ]	(	""	)
+name54	[ 0	locks=0 ]	(	""	)
+label54	[ 0	locks=0 ]	(	""	)
+name55	[ 0	locks=0 ]	(	""	)
+label55	[ 0	locks=0 ]	(	""	)
+name56	[ 0	locks=0 ]	(	""	)
+label56	[ 0	locks=0 ]	(	""	)
+name57	[ 0	locks=0 ]	(	""	)
+label57	[ 0	locks=0 ]	(	""	)
+name58	[ 0	locks=0 ]	(	""	)
+label58	[ 0	locks=0 ]	(	""	)
+name59	[ 0	locks=0 ]	(	""	)
+label59	[ 0	locks=0 ]	(	""	)
+name60	[ 0	locks=0 ]	(	""	)
+label60	[ 0	locks=0 ]	(	""	)
+name61	[ 0	locks=0 ]	(	""	)
+label61	[ 0	locks=0 ]	(	""	)
+name62	[ 0	locks=0 ]	(	""	)
+label62	[ 0	locks=0 ]	(	""	)
+name63	[ 0	locks=0 ]	(	""	)
+label63	[ 0	locks=0 ]	(	""	)
+name64	[ 0	locks=0 ]	(	""	)
+label64	[ 0	locks=0 ]	(	""	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/suboutput1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/subinput1.init"
+Content-Type: text/plain
+
+type = subinput
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/subinput1.def"
+Content-Type: text/plain
+
+comment ""
+position -11.9544 1.30013
+connectornextid 0
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516324180
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/subinput1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/subinput1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Metalness.init"
+Content-Type: text/plain
+
+type = redshift::TextureSampler
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Metalness.def"
+Content-Type: text/plain
+
+comment ""
+position -9.30956 -1.65847
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+0 "outColor"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516324107
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage python
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Metalness.spareparmdef"
+Content-Type: text/plain
+
+    parm {
+	name	"subTex"
+	label	"Substance Texture"
+	type	string
+	default	{ "" }
+    }
+    group {
+	name	"RS_shaderNodeMainSwitcher4"
+	label	"General"
+
+	groupsimple {
+	    name	"Image_1"
+	    label	"Image"
+
+	    parm {
+		name	"tex0"
+		baseparm
+		label	"Filename"
+		export	none
+	    }
+	    groupsimple {
+		name	"Gamma_Override_2"
+		label	"Gamma Override"
+
+		parm {
+		    name	"tex0_gammaoverride"
+		    baseparm
+		    label	"Enable"
+		    export	none
+		}
+		parm {
+		    name	"tex0_srgb"
+		    baseparm
+		    label	"sRGB"
+		    export	none
+		}
+		parm {
+		    name	"tex0_gamma"
+		    baseparm
+		    label	"Gamma"
+		    export	none
+		}
+	    }
+
+	}
+
+	groupsimple {
+	    name	"UV_3"
+	    label	"UV"
+
+	    parm {
+		name	"tspace_id"
+		baseparm
+		label	"UV Channel"
+		export	none
+	    }
+	    parm {
+		name	"mirrorU"
+		baseparm
+		label	"Mirror U"
+		export	none
+	    }
+	    parm {
+		name	"mirrorV"
+		baseparm
+		label	"Mirror V"
+		export	none
+	    }
+	    parm {
+		name	"wrapU"
+		baseparm
+		label	"Wrap U"
+		export	none
+	    }
+	    parm {
+		name	"wrapV"
+		baseparm
+		label	"Wrap V"
+		export	none
+	    }
+	    groupsimple {
+		name	"Remap_4"
+		label	"Remap"
+
+		parm {
+		    name	"scale"
+		    baseparm
+		    label	"Scale"
+		    export	none
+		}
+		parm {
+		    name	"offset"
+		    baseparm
+		    label	"Offset"
+		    export	none
+		}
+		parm {
+		    name	"rotate"
+		    baseparm
+		    label	"Rotate"
+		    export	none
+		}
+	    }
+
+	}
+
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_1"
+	label	"Adjust"
+
+	parm {
+	    name	"color_multiplier"
+	    baseparm
+	    label	"Color Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"color_offset"
+	    baseparm
+	    label	"Color Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_multiplier"
+	    baseparm
+	    label	"Alpha Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"alpha_offset"
+	    baseparm
+	    label	"Alpha Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_is_luminance"
+	    baseparm
+	    label	"Alpha Is Luminance"
+	    export	none
+	}
+	parm {
+	    name	"invalid_color"
+	    baseparm
+	    label	"Default/Invalid Color"
+	    export	none
+	}
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_2"
+	label	"Advanced"
+
+	parm {
+	    name	"filter_enable_type"
+	    baseparm
+	    label	"Filter Enable"
+	    export	none
+	}
+	parm {
+	    name	"filter_bicubic"
+	    baseparm
+	    label	"Bicubic Filtering"
+	    export	none
+	}
+	parm {
+	    name	"prefer_sharp"
+	    baseparm
+	    label	"Prefer Sharp Filtering"
+	    export	none
+	}
+	parm {
+	    name	"mip_bias"
+	    baseparm
+	    label	"Mip Bias"
+	    export	none
+	}
+    }
+
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Metalness.chn"
+Content-Type: text/plain
+
+{
+    channel tex0 {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = "node = hou.node('..')
+foo = node.hdaModule().getPath(ch('subTex'))
+#foo = 'bar'
+return foo" language = python }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Metalness.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+RS_shaderNodeMainSwitcher	[ 0	locks=0 ]	(	0	0	0	)
+Image_0	[ 0	locks=0 ]	(	0	)
+tex0	[ 8	locks=0 ]	(	[ tex0	/_Metalness.exr ] 	)
+Gamma_Override_1	[ 0	locks=0 ]	(	0	)
+tex0_gammaoverride	[ 0	locks=0 ]	(	"off"	)
+tex0_srgb	[ 0	locks=0 ]	(	"off"	)
+tex0_gamma	[ 0	locks=0 ]	(	1	)
+UV_2	[ 0	locks=0 ]	(	0	)
+tspace_id	[ 0	locks=0 ]	(	uv	)
+mirrorU	[ 0	locks=0 ]	(	"off"	)
+mirrorV	[ 0	locks=0 ]	(	"off"	)
+wrapU	[ 0	locks=0 ]	(	"on"	)
+wrapV	[ 0	locks=0 ]	(	"on"	)
+Remap_3	[ 0	locks=0 ]	(	0	)
+scale	[ 0	locks=0 ]	(	1	1	)
+offset	[ 0	locks=0 ]	(	0	0	)
+rotate	[ 0	locks=0 ]	(	0	)
+color_multiplier	[ 0	locks=0 ]	(	1	1	1	)
+color_offset	[ 0	locks=0 ]	(	0	0	0	)
+alpha_multiplier	[ 0	locks=0 ]	(	1	)
+alpha_offset	[ 0	locks=0 ]	(	0	)
+alpha_is_luminance	[ 0	locks=0 ]	(	"off"	)
+invalid_color	[ 0	locks=0 ]	(	0	0	0	0	)
+filter_enable_type	[ 0	locks=0 ]	(	2	)
+filter_bicubic	[ 0	locks=0 ]	(	"off"	)
+prefer_sharp	[ 0	locks=0 ]	(	"on"	)
+mip_bias	[ 0	locks=0 ]	(	0	)
+subTex	[ 0	locks=0 ]	(	$OS	)
+RS_shaderNodeMainSwitcher4	[ 0	locks=0 ]	(	0	0	0	)
+Image_1	[ 0	locks=0 ]	(	0	)
+Gamma_Override_2	[ 0	locks=0 ]	(	0	)
+UV_3	[ 0	locks=0 ]	(	0	)
+Remap_4	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Metalness.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Adjust":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Advanced":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_General":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter1.init"
+Content-Type: text/plain
+
+type = redshift::RSColorSplitter
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter1.def"
+Content-Type: text/plain
+
+comment ""
+position -6.40449 -1.65847
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+1 "outR"
+}
+inputsNamed3
+{
+0 	Metalness 0 1 "input"
+}
+inputs
+{
+0 	Metalness 0 1
+}
+stat
+{
+  create 1516324456
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+input	[ 0	locks=0 ]	(	0	0	0	1	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Roughness.init"
+Content-Type: text/plain
+
+type = redshift::TextureSampler
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Roughness.def"
+Content-Type: text/plain
+
+comment ""
+position -10.4758 -3.68209
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+0 "outColor"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516324107
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage python
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Roughness.spareparmdef"
+Content-Type: text/plain
+
+    parm {
+	name	"subTex"
+	label	"Substance Texture"
+	type	string
+	default	{ "" }
+    }
+    group {
+	name	"RS_shaderNodeMainSwitcher4"
+	label	"General"
+
+	groupsimple {
+	    name	"Image_1"
+	    label	"Image"
+
+	    parm {
+		name	"tex0"
+		baseparm
+		label	"Filename"
+		export	none
+	    }
+	    groupsimple {
+		name	"Gamma_Override_2"
+		label	"Gamma Override"
+
+		parm {
+		    name	"tex0_gammaoverride"
+		    baseparm
+		    label	"Enable"
+		    export	none
+		}
+		parm {
+		    name	"tex0_srgb"
+		    baseparm
+		    label	"sRGB"
+		    export	none
+		}
+		parm {
+		    name	"tex0_gamma"
+		    baseparm
+		    label	"Gamma"
+		    export	none
+		}
+	    }
+
+	}
+
+	groupsimple {
+	    name	"UV_3"
+	    label	"UV"
+
+	    parm {
+		name	"tspace_id"
+		baseparm
+		label	"UV Channel"
+		export	none
+	    }
+	    parm {
+		name	"mirrorU"
+		baseparm
+		label	"Mirror U"
+		export	none
+	    }
+	    parm {
+		name	"mirrorV"
+		baseparm
+		label	"Mirror V"
+		export	none
+	    }
+	    parm {
+		name	"wrapU"
+		baseparm
+		label	"Wrap U"
+		export	none
+	    }
+	    parm {
+		name	"wrapV"
+		baseparm
+		label	"Wrap V"
+		export	none
+	    }
+	    groupsimple {
+		name	"Remap_4"
+		label	"Remap"
+
+		parm {
+		    name	"scale"
+		    baseparm
+		    label	"Scale"
+		    export	none
+		}
+		parm {
+		    name	"offset"
+		    baseparm
+		    label	"Offset"
+		    export	none
+		}
+		parm {
+		    name	"rotate"
+		    baseparm
+		    label	"Rotate"
+		    export	none
+		}
+	    }
+
+	}
+
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_1"
+	label	"Adjust"
+
+	parm {
+	    name	"color_multiplier"
+	    baseparm
+	    label	"Color Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"color_offset"
+	    baseparm
+	    label	"Color Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_multiplier"
+	    baseparm
+	    label	"Alpha Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"alpha_offset"
+	    baseparm
+	    label	"Alpha Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_is_luminance"
+	    baseparm
+	    label	"Alpha Is Luminance"
+	    export	none
+	}
+	parm {
+	    name	"invalid_color"
+	    baseparm
+	    label	"Default/Invalid Color"
+	    export	none
+	}
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_2"
+	label	"Advanced"
+
+	parm {
+	    name	"filter_enable_type"
+	    baseparm
+	    label	"Filter Enable"
+	    export	none
+	}
+	parm {
+	    name	"filter_bicubic"
+	    baseparm
+	    label	"Bicubic Filtering"
+	    export	none
+	}
+	parm {
+	    name	"prefer_sharp"
+	    baseparm
+	    label	"Prefer Sharp Filtering"
+	    export	none
+	}
+	parm {
+	    name	"mip_bias"
+	    baseparm
+	    label	"Mip Bias"
+	    export	none
+	}
+    }
+
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Roughness.chn"
+Content-Type: text/plain
+
+{
+    channel tex0 {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = "node = hou.node('..')
+foo = node.hdaModule().getPath(ch('subTex'))
+#foo = 'bar'
+return foo" language = python }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Roughness.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+RS_shaderNodeMainSwitcher	[ 0	locks=0 ]	(	0	0	0	)
+Image_0	[ 0	locks=0 ]	(	0	)
+tex0	[ 8	locks=0 ]	(	[ tex0	/_Roughness.exr ] 	)
+Gamma_Override_1	[ 0	locks=0 ]	(	0	)
+tex0_gammaoverride	[ 0	locks=0 ]	(	"off"	)
+tex0_srgb	[ 0	locks=0 ]	(	"off"	)
+tex0_gamma	[ 0	locks=0 ]	(	1	)
+UV_2	[ 0	locks=0 ]	(	0	)
+tspace_id	[ 0	locks=0 ]	(	uv	)
+mirrorU	[ 0	locks=0 ]	(	"off"	)
+mirrorV	[ 0	locks=0 ]	(	"off"	)
+wrapU	[ 0	locks=0 ]	(	"on"	)
+wrapV	[ 0	locks=0 ]	(	"on"	)
+Remap_3	[ 0	locks=0 ]	(	0	)
+scale	[ 0	locks=0 ]	(	1	1	)
+offset	[ 0	locks=0 ]	(	0	0	)
+rotate	[ 0	locks=0 ]	(	0	)
+color_multiplier	[ 0	locks=0 ]	(	1	1	1	)
+color_offset	[ 0	locks=0 ]	(	0	0	0	)
+alpha_multiplier	[ 0	locks=0 ]	(	1	)
+alpha_offset	[ 0	locks=0 ]	(	0	)
+alpha_is_luminance	[ 0	locks=0 ]	(	"off"	)
+invalid_color	[ 0	locks=0 ]	(	0	0	0	0	)
+filter_enable_type	[ 0	locks=0 ]	(	2	)
+filter_bicubic	[ 0	locks=0 ]	(	"off"	)
+prefer_sharp	[ 0	locks=0 ]	(	"on"	)
+mip_bias	[ 0	locks=0 ]	(	0	)
+subTex	[ 0	locks=0 ]	(	$OS	)
+RS_shaderNodeMainSwitcher4	[ 0	locks=0 ]	(	0	0	0	)
+Image_1	[ 0	locks=0 ]	(	0	)
+Gamma_Override_2	[ 0	locks=0 ]	(	0	)
+UV_3	[ 0	locks=0 ]	(	0	)
+Remap_4	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Roughness.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Adjust":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Advanced":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_General":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter2.init"
+Content-Type: text/plain
+
+type = redshift::RSColorSplitter
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter2.def"
+Content-Type: text/plain
+
+comment ""
+position -7.57075 -3.68209
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+1 "outR"
+}
+inputsNamed3
+{
+0 	Roughness 0 1 "input"
+}
+inputs
+{
+0 	Roughness 0 1
+}
+stat
+{
+  create 1516324456
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter2.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+input	[ 0	locks=0 ]	(	0	0	0	1	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter2.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Normal.init"
+Content-Type: text/plain
+
+type = redshift::NormalMap
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Normal.def"
+Content-Type: text/plain
+
+comment ""
+position -8.18714 -6.03896
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display on render on highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+0 "outDisplacementVector"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516324548
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage python
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Normal.spareparmdef"
+Content-Type: text/plain
+
+    parm {
+	name	"subTex"
+	label	"Substance Texture"
+	type	string
+	default	{ "" }
+    }
+    group {
+	name	"RS_shaderNodeMainSwitcher3"
+	label	"General"
+
+	groupsimple {
+	    name	"Texture_1"
+	    label	"Texture"
+
+	    parm {
+		name	"tex0"
+		baseparm
+		label	"Map"
+		export	none
+	    }
+	    parm {
+		name	"tspace_id"
+		baseparm
+		label	"Texture Space"
+		export	none
+	    }
+	    parm {
+		name	"unbiasedNormalMap"
+		baseparm
+		label	"Unbiased Normals"
+		export	none
+	    }
+	    parm {
+		name	"flipY"
+		baseparm
+		label	"Flip Normal Y"
+		export	none
+	    }
+	    parm {
+		name	"scale"
+		baseparm
+		label	"Scale Normal"
+		export	none
+	    }
+	}
+
+	groupsimple {
+	    name	"Tangents_2"
+	    label	"Tangents"
+
+	    parm {
+		name	"tangents"
+		baseparm
+		label	"Tangents"
+		export	none
+	    }
+	}
+
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher3_1"
+	label	"Advanced"
+
+	groupsimple {
+	    name	"Elliptical_Filtering_3"
+	    label	"Elliptical Filtering"
+
+	    parm {
+		name	"eccmax"
+		baseparm
+		label	"Maximum Eccentricity"
+		export	none
+	    }
+	}
+
+	groupsimple {
+	    name	"Alternate_4"
+	    label	"Alternate"
+
+	    parm {
+		name	"alt_x"
+		baseparm
+		label	"U"
+		export	none
+	    }
+	    parm {
+		name	"alt_y"
+		baseparm
+		label	"V"
+		export	none
+	    }
+	}
+
+	groupsimple {
+	    name	"Repeats_5"
+	    label	"Repeats"
+
+	    parm {
+		name	"repeats"
+		baseparm
+		label	"Texture Repeats"
+		export	none
+	    }
+	    parm {
+		name	"wrapU"
+		baseparm
+		label	"Wrap U"
+		export	none
+	    }
+	    parm {
+		name	"wrapV"
+		baseparm
+		label	"Wrap V"
+		export	none
+	    }
+	}
+
+	groupsimple {
+	    name	"UV_Remap_6"
+	    label	"UV Remap"
+
+	    parm {
+		name	"min_uv"
+		baseparm
+		label	"Minimum"
+		export	none
+	    }
+	    parm {
+		name	"max_uv"
+		baseparm
+		label	"Maximum"
+		export	none
+	    }
+	}
+
+    }
+
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Normal.chn"
+Content-Type: text/plain
+
+{
+    channel tex0 {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = "node = hou.node('..')
+foo = node.hdaModule().getPath(ch('subTex'))
+#foo = 'bar'
+return foo" language = python }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Normal.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+RS_shaderNodeMainSwitcher	[ 0	locks=0 ]	(	0	0	)
+Texture_0	[ 0	locks=0 ]	(	0	)
+tex0	[ 8	locks=0 ]	(	[ tex0	/_Normal.exr ] 	)
+tspace_id	[ 0	locks=0 ]	(	uv	)
+unbiasedNormalMap	[ 0	locks=0 ]	(	"off"	)
+flipY	[ 0	locks=0 ]	(	"on"	)
+scale	[ 0	locks=0 ]	(	1	)
+Tangents_1	[ 0	locks=0 ]	(	0	)
+tangents	[ 0	locks=0 ]	(	tangent	)
+Elliptical_Filtering_2	[ 0	locks=0 ]	(	0	)
+eccmax	[ 0	locks=0 ]	(	8	)
+Alternate_3	[ 0	locks=0 ]	(	0	)
+alt_x	[ 0	locks=0 ]	(	"off"	)
+alt_y	[ 0	locks=0 ]	(	"off"	)
+Repeats_4	[ 0	locks=0 ]	(	0	)
+repeats	[ 0	locks=0 ]	(	1	1	)
+wrapU	[ 0	locks=0 ]	(	"on"	)
+wrapV	[ 0	locks=0 ]	(	"on"	)
+UV_Remap_5	[ 0	locks=0 ]	(	0	)
+min_uv	[ 0	locks=0 ]	(	0	0	)
+max_uv	[ 0	locks=0 ]	(	1	1	)
+subTex	[ 0	locks=0 ]	(	$OS	)
+RS_shaderNodeMainSwitcher3	[ 0	locks=0 ]	(	0	0	)
+Texture_1	[ 0	locks=0 ]	(	0	)
+Tangents_2	[ 0	locks=0 ]	(	0	)
+Elliptical_Filtering_3	[ 0	locks=0 ]	(	0	)
+Alternate_4	[ 0	locks=0 ]	(	0	)
+Repeats_5	[ 0	locks=0 ]	(	0	)
+UV_Remap_6	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Normal.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpBlender1.init"
+Content-Type: text/plain
+
+type = redshift::BumpBlender
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpBlender1.def"
+Content-Type: text/plain
+
+comment ""
+position -3.6136 -5.96396
+connectornextid 3
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+2 "outDisplacementVector"
+}
+inputsNamed3
+{
+0 	Normal 0 1 "baseInput"
+1 	BumpMap1 1 1 "bumpInput0"
+}
+inputs
+{
+0 	Normal 0 1
+1 	BumpMap1 0 1
+}
+stat
+{
+  create 1516324662
+  modify 1516333216
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpBlender1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+additive	[ 0	locks=0 ]	(	"off"	)
+Base_0	[ 0	locks=0 ]	(	0	)
+baseInput	[ 0	locks=0 ]	(	0	0	0	)
+Layer_0_1	[ 0	locks=0 ]	(	0	)
+bumpInput0	[ 0	locks=0 ]	(	0	0	0	)
+bumpWeight0	[ 0	locks=0 ]	(	1	)
+Layer_1_2	[ 0	locks=0 ]	(	0	)
+bumpInput1	[ 0	locks=0 ]	(	0	0	0	)
+bumpWeight1	[ 0	locks=0 ]	(	0	)
+Layer_2_3	[ 0	locks=0 ]	(	0	)
+bumpInput2	[ 0	locks=0 ]	(	0	0	0	)
+bumpWeight2	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpBlender1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Base":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Layer 1":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Layer 2":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpMap1.init"
+Content-Type: text/plain
+
+type = redshift::BumpMap
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpMap1.def"
+Content-Type: text/plain
+
+comment ""
+position -8.3863 -7.6135
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+1 "out"
+}
+inputsNamed3
+{
+0 	RSColorSplitter3 1 1 "input"
+}
+inputs
+{
+0 	RSColorSplitter3 0 1
+}
+stat
+{
+  create 1516324868
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpMap1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+Texture_0	[ 0	locks=0 ]	(	0	)
+input	[ 0	locks=0 ]	(	0	0	0	)
+inuse	[ 0	locks=0 ]	(	"on"	)
+scale	[ 0	locks=0 ]	(	0.5	)
+factorInObjScale	[ 0	locks=0 ]	(	"on"	)
+Remap_1	[ 0	locks=0 ]	(	0	)
+oldrange_min	[ 0	locks=0 ]	(	0	)
+oldrange_max	[ 0	locks=0 ]	(	1	)
+newrange_min	[ 0	locks=0 ]	(	0	)
+newrange_max	[ 0	locks=0 ]	(	1	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/BumpMap1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Remap":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Height.init"
+Content-Type: text/plain
+
+type = redshift::TextureSampler
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Height.def"
+Content-Type: text/plain
+
+comment ""
+position -12.8266 -7.16896
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+0 "outColor"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create 1516324107
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage python
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Height.spareparmdef"
+Content-Type: text/plain
+
+    parm {
+	name	"subTex"
+	label	"Substance Texture"
+	type	string
+	default	{ "" }
+    }
+    group {
+	name	"RS_shaderNodeMainSwitcher4"
+	label	"General"
+
+	groupsimple {
+	    name	"Image_1"
+	    label	"Image"
+
+	    parm {
+		name	"tex0"
+		baseparm
+		label	"Filename"
+		export	none
+	    }
+	    groupsimple {
+		name	"Gamma_Override_2"
+		label	"Gamma Override"
+
+		parm {
+		    name	"tex0_gammaoverride"
+		    baseparm
+		    label	"Enable"
+		    export	none
+		}
+		parm {
+		    name	"tex0_srgb"
+		    baseparm
+		    label	"sRGB"
+		    export	none
+		}
+		parm {
+		    name	"tex0_gamma"
+		    baseparm
+		    label	"Gamma"
+		    export	none
+		}
+	    }
+
+	}
+
+	groupsimple {
+	    name	"UV_3"
+	    label	"UV"
+
+	    parm {
+		name	"tspace_id"
+		baseparm
+		label	"UV Channel"
+		export	none
+	    }
+	    parm {
+		name	"mirrorU"
+		baseparm
+		label	"Mirror U"
+		export	none
+	    }
+	    parm {
+		name	"mirrorV"
+		baseparm
+		label	"Mirror V"
+		export	none
+	    }
+	    parm {
+		name	"wrapU"
+		baseparm
+		label	"Wrap U"
+		export	none
+	    }
+	    parm {
+		name	"wrapV"
+		baseparm
+		label	"Wrap V"
+		export	none
+	    }
+	    groupsimple {
+		name	"Remap_4"
+		label	"Remap"
+
+		parm {
+		    name	"scale"
+		    baseparm
+		    label	"Scale"
+		    export	none
+		}
+		parm {
+		    name	"offset"
+		    baseparm
+		    label	"Offset"
+		    export	none
+		}
+		parm {
+		    name	"rotate"
+		    baseparm
+		    label	"Rotate"
+		    export	none
+		}
+	    }
+
+	}
+
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_1"
+	label	"Adjust"
+
+	parm {
+	    name	"color_multiplier"
+	    baseparm
+	    label	"Color Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"color_offset"
+	    baseparm
+	    label	"Color Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_multiplier"
+	    baseparm
+	    label	"Alpha Multiplier"
+	    export	none
+	}
+	parm {
+	    name	"alpha_offset"
+	    baseparm
+	    label	"Alpha Offset"
+	    export	none
+	}
+	parm {
+	    name	"alpha_is_luminance"
+	    baseparm
+	    label	"Alpha Is Luminance"
+	    export	none
+	}
+	parm {
+	    name	"invalid_color"
+	    baseparm
+	    label	"Default/Invalid Color"
+	    export	none
+	}
+    }
+
+    group {
+	name	"RS_shaderNodeMainSwitcher4_2"
+	label	"Advanced"
+
+	parm {
+	    name	"filter_enable_type"
+	    baseparm
+	    label	"Filter Enable"
+	    export	none
+	}
+	parm {
+	    name	"filter_bicubic"
+	    baseparm
+	    label	"Bicubic Filtering"
+	    export	none
+	}
+	parm {
+	    name	"prefer_sharp"
+	    baseparm
+	    label	"Prefer Sharp Filtering"
+	    export	none
+	}
+	parm {
+	    name	"mip_bias"
+	    baseparm
+	    label	"Mip Bias"
+	    export	none
+	}
+    }
+
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Height.chn"
+Content-Type: text/plain
+
+{
+    channel tex0 {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = "node = hou.node('..')
+foo = node.hdaModule().getPath(ch('subTex'))
+#foo = 'bar'
+return foo" language = python }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Height.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+RS_shaderNodeMainSwitcher	[ 0	locks=0 ]	(	0	0	0	)
+Image_0	[ 0	locks=0 ]	(	0	)
+tex0	[ 8	locks=0 ]	(	[ tex0	/_Height.exr ] 	)
+Gamma_Override_1	[ 0	locks=0 ]	(	0	)
+tex0_gammaoverride	[ 0	locks=0 ]	(	"off"	)
+tex0_srgb	[ 0	locks=0 ]	(	"off"	)
+tex0_gamma	[ 0	locks=0 ]	(	1	)
+UV_2	[ 0	locks=0 ]	(	0	)
+tspace_id	[ 0	locks=0 ]	(	uv	)
+mirrorU	[ 0	locks=0 ]	(	"off"	)
+mirrorV	[ 0	locks=0 ]	(	"off"	)
+wrapU	[ 0	locks=0 ]	(	"on"	)
+wrapV	[ 0	locks=0 ]	(	"on"	)
+Remap_3	[ 0	locks=0 ]	(	0	)
+scale	[ 0	locks=0 ]	(	1	1	)
+offset	[ 0	locks=0 ]	(	0	0	)
+rotate	[ 0	locks=0 ]	(	0	)
+color_multiplier	[ 0	locks=0 ]	(	1	1	1	)
+color_offset	[ 0	locks=0 ]	(	0	0	0	)
+alpha_multiplier	[ 0	locks=0 ]	(	1	)
+alpha_offset	[ 0	locks=0 ]	(	0	)
+alpha_is_luminance	[ 0	locks=0 ]	(	"off"	)
+invalid_color	[ 0	locks=0 ]	(	0	0	0	0	)
+filter_enable_type	[ 0	locks=0 ]	(	2	)
+filter_bicubic	[ 0	locks=0 ]	(	"off"	)
+prefer_sharp	[ 0	locks=0 ]	(	"on"	)
+mip_bias	[ 0	locks=0 ]	(	0	)
+subTex	[ 0	locks=0 ]	(	$OS	)
+RS_shaderNodeMainSwitcher4	[ 0	locks=0 ]	(	0	0	0	)
+Image_1	[ 0	locks=0 ]	(	0	)
+Gamma_Override_2	[ 0	locks=0 ]	(	0	)
+UV_3	[ 0	locks=0 ]	(	0	)
+Remap_4	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Height.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	},
+	"__inputgroup_":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Adjust":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_Advanced":{
+		"type":"string",
+		"value":"collapsed"
+	},
+	"__inputgroup_General":{
+		"type":"string",
+		"value":"collapsed"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter3.init"
+Content-Type: text/plain
+
+type = redshift::RSColorSplitter
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter3.def"
+Content-Type: text/plain
+
+comment ""
+position -10.6914 -6.03896
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
+outputsNamed3
+{
+1 "outR"
+}
+inputsNamed3
+{
+0 	Height 0 1 "input"
+}
+inputs
+{
+0 	Height 0 1
+}
+stat
+{
+  create 1516324456
+  modify 1516333215
+  author Administrator@user-PC
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter3.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+input	[ 0	locks=0 ]	(	0	0	0	1	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RSColorSplitter3.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"16.0.736"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.order"
+Content-Type: text/plain
+
+13
+Material1
+BaseColor
+suboutput1
+subinput1
+Metalness
+RSColorSplitter1
+Roughness
+RSColorSplitter2
+Normal
+BumpBlender1
+BumpMap1
+Height
+RSColorSplitter3
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.net"
+Content-Type: text/plain
+
+1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY--

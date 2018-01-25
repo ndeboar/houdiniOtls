@@ -1,0 +1,54 @@
+import zync_houdini as zh
+import os.path
+import htoa
+import zync
+
+def login(**kwargs):
+    zh.ZyncConnection().login()
+    zh.update_node_login(kwargs['node'])
+
+def submit(**kwargs):
+    node = kwargs['node']
+    houJob = zh.ZyncHoudiniJob(node)
+    _z= zync.Zync()
+    jobs = []
+        
+    arRops = node.inputs()
+    for arRop in arRops:
+        outPicture = arRop.parm('ar_picture').unexpandedString()
+        outPicture = os.path.split(outPicture)
+        frames = arRop.parmTuple('f').eval()        
+        houdini_version = hou.applicationVersion()
+        
+        submitDict = {'frame_begin': frames[0],
+        'num_instances': node.evalParm('num_instances'),
+        'skip_download': node.evalParm('skip_download'),
+        'frame_end': frames[1],
+        'override_res': 0,
+        'output_filename': outPicture[1],
+        'use_standalone': node.evalParm('use_standalone'),
+        'step': frames[2],
+        'renderer': 'arnold',
+        'chunk_size': node.evalParm('chunk_size'),
+        'upload_only': node.evalParm('upload_only'),
+        'proj_name': node.evalParm('proj_name'),
+        'scene_info': {'houdini_version': 'Houdini%d.%d' % (houdini_version[0], houdini_version[1]),
+        'dependencies': list(houJob.get_dependencies(frames[0], frames[1], frames[2])),
+        'renderer_version': htoa.__version__,
+        'houdini_build_version': '%d.%d.%d' % houdini_version},
+        'plugin_version': zh.__version__,
+        'notify_complete': node.evalParm('notify_complete'),
+        'priority': node.evalParm('priority'),
+        'instance_type': node.evalParm('instance_type'),
+        'output_dir': outPicture[0],
+        'xres': 1,
+        'render_node': arRop.path(),
+        'yres': 1}
+                
+        try:
+            _z.submit_job('houdini', houJob.scene_path(), params=submitDict)
+            print ('Submitted ' + arRop.name())
+        except Exception as e:
+            hou.ui.displayMessage(text=str(e), title='Job submission failed')
+
+    hou.ui.displayMessage(text='Job submitted to Zync.')

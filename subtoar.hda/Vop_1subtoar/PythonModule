@@ -1,0 +1,11 @@
+import os.path
+def getPath(subfile):
+    texPath = hou.parm('../texPath').eval()
+    texPath = os.path.split(texPath)
+    file = texPath[1].split('_')
+    file.pop(len(file)-1)
+    file = '_'.join(file)
+    return('%s/%s_%s.exr'%(texPath[0],file,subfile))
+
+def test():
+    return('works')

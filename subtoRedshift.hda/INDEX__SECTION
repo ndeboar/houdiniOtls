@@ -1,0 +1,15 @@
+Operator:     subtoarredshift
+Label:        Substance to Redshift
+Path:         oplib:/Vop/subtoarredshift?Vop/subtoarredshift
+Icon:         opdef:/Vop/subtoarredshift?IconImage
+Table:        Vop
+License:      
+Extra:        
+User:         
+Inputs:       0 to 0
+Outputs:      2048
+Subnet:       true
+Python:       false
+Empty:        false
+Modified:     Fri Jan 19 14:10:17 2018
+

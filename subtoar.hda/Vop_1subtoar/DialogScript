@@ -1,0 +1,28 @@
+# Dialog script for subtoar automatically generated
+
+{
+    name	subtoar
+    script	subtoar
+    label	"Substance To Arnold"
+
+    output	bsdf	shader	shader
+    signature	"Default Inputs"	default	{ bsdf }
+
+    outputoverrides	default
+    {
+	___begin	auto
+			(0)
+    }
+
+    help {
+	""
+    }
+
+    parm {
+	name	"texPath"
+	label	"Texture Path"
+	type	file
+	default	{ "" }
+	help	"Select any exported substance texture"
+    }
+}

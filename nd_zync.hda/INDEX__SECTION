@@ -1,0 +1,14 @@
+Operator:     nd_zync
+Label:        nd Zync Submit
+Path:         oplib:/Driver/nd_zync?Driver/nd_zync
+Icon:         ROP_soho
+Table:        Driver
+License:      
+Extra:        
+User:         
+Inputs:       1 to 9999
+Subnet:       false
+Python:       false
+Empty:        false
+Modified:     Thu Jan 25 14:57:16 2018
+
