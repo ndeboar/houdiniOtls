@@ -559,10 +559,34 @@
 	default	{ "0" }
     }
     parm {
+	name	"chProj"
+	label	"Project"
+	type	button
+	joinnext
+	default	{ "0" }
+	parmtag	{ "script_callback" "hou.pwd().hdaModule().chooseProject(**kwargs)" }
+	parmtag	{ "script_callback_language" "python" }
+    }
+    parm {
 	name	"proj_name"
 	label	"Project Name"
 	type	string
+	nolabel
 	default	{ "" }
+    }
+    parm {
+	name	"ChInst"
+	label	"Instance Type"
+	type	button
+	joinnext
+	default	{ "0" }
+    }
+    parm {
+	name	"instance_type"
+	label	"Instance Type"
+	type	string
+	nolabel
+	default	{ "(PREEMPTIBLE) zync-64vcpu-128gb" }
     }
     parm {
 	name	"num_instances"
@@ -579,27 +603,32 @@
 	range	{ 0 10 }
     }
     parm {
-	name	"instance_type"
-	label	"Instance Type"
-	type	string
-	default	{ "(PREEMPTIBLE) zync-64vcpu-128gb" }
+	name	"priority"
+	label	"Priority"
+	type	integer
+	default	{ "50" }
+	range	{ 0 10 }
     }
     parm {
 	name	"skip_download"
 	label	"Skip Download"
 	type	toggle
+	joinnext
 	default	{ "0" }
     }
     parm {
 	name	"use_standalone"
 	label	"Use Standalone"
 	type	toggle
+	joinnext
 	default	{ "0" }
+	parmtag	{ "export_disable" "1" }
     }
     parm {
 	name	"upload_only"
 	label	"Upload Only"
 	type	toggle
+	joinnext
 	default	{ "0" }
     }
     parm {
@@ -607,13 +636,6 @@
 	label	"Notify on Completion"
 	type	toggle
 	default	{ "0" }
-	range	{ 0 10 }
-    }
-    parm {
-	name	"priority"
-	label	"Priority"
-	type	integer
-	default	{ "50" }
 	range	{ 0 10 }
     }
     parm {

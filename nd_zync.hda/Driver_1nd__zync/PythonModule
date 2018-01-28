@@ -52,3 +52,15 @@ def submit(**kwargs):
             hou.ui.displayMessage(text=str(e), title='Job submission failed')
 
     hou.ui.displayMessage(text='Job submitted to Zync.')
+
+
+def chooseProject(**kwargs):
+    node = kwargs['node']
+    _z= zync.Zync()
+    projList = _z.get_project_list()
+    proj = hou.ui.selectFromList([pName['name'] for pName in projList],
+        exclusive=True,
+        title='Projects',
+        num_visible_rows=len(projList))
+    #print(projList[proj[0]]['name'])
+    node.parm('proj_name').set(projList[proj[0]]['name'])
