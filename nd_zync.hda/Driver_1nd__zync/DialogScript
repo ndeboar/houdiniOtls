@@ -569,7 +569,7 @@
 	    type	string
 	    nolabel
 	    default	{ "" }
-	    parmtag	{ "script_callback" "chooseInstance" }
+	    parmtag	{ "script_callback" "" }
 	    parmtag	{ "script_callback_language" "python" }
 	}
 	parm {

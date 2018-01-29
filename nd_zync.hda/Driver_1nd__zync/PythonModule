@@ -37,6 +37,15 @@ def login(**kwargs):
     zh.update_node_login(kwargs['node'])
 
 def submit(**kwargs):
+    if hou.hipFile.hasUnsavedChanges():
+        save_file_response = hou.ui.displayMessage(
+        "There are some unsaved changes. Do you want to save the file before "
+        "submitting to Zync?", buttons=("Yes", "No", "Cancel"), close_choice=2)
+        if save_file_response == 2:
+            return
+        if save_file_response == 0:
+            hou.hipFile.save()
+    
     node = kwargs['node']
     houJob = zh.ZyncHoudiniJob(node)
     zyncCon = nd_ZyncConnection()
@@ -78,7 +87,6 @@ def submit(**kwargs):
         #settings on arnold node
         arRop.parm('ar_log_verbosity').set('detailed') #enable better logging
         arRop.parm('ar_exr_autocrop').set(1)
-        
 
         zyncCon.submit_job(houJob.scene_path(), submitDict)
 
