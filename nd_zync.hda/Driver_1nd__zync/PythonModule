@@ -3,6 +3,7 @@ import os.path
 import htoa
 import zync as z
 
+#creates an instance of the zync connection, rather than creating a new one
 class nd_ZyncConnection(object):
     instance = None
 
@@ -24,8 +25,7 @@ class nd_ZyncConnection(object):
                 self.zync_conn.submit_job(
                 'houdini', hipPath, submitDict)
                 hou.ui.displayMessage(text='Job submitted to Zync.')
-                post_submit_job(node)
-            except zync.ZyncError as e:
+            except z.ZyncError as e:
                 hou.ui.displayMessage(title='Submission Error',
                 text='Error submitting job: %s' % (str(e),),
                 severity=hou.severityType.Error)
@@ -75,7 +75,10 @@ def submit(**kwargs):
         'xres': 1,
         'render_node': arRop.path(),
         'yres': 1}
-        #print submitDict
+        #settings on arnold node
+        arRop.parm('ar_log_verbosity').set('detailed') #enable better logging
+        arRop.parm('ar_exr_autocrop').set(1)
+        
 
         zyncCon.submit_job(houJob.scene_path(), submitDict)
 
@@ -91,3 +94,15 @@ def chooseProject(**kwargs):
         num_visible_rows=len(projList))
     #print(projList[proj[0]]['name'])
     node.parm('proj_name').set(projList[proj[0]]['name'])
+
+def chooseInstance(**kwargs):
+    node = kwargs['node']
+    zyncCon = zh.ZyncConnection()
+    machines = zyncCon.get_machine_types(renderer='houdini')
+    machine = hou.ui.selectFromList(machines.keys(),
+        exclusive=True,
+        title='Instances',
+        num_visible_rows=len(machines))
+    #print(projList[proj[0]]['name'])
+    machine = machine[0]
+    node.parm('instance_type').set(machines.keys()[machine])

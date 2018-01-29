@@ -569,6 +569,8 @@
 	    type	string
 	    nolabel
 	    default	{ "" }
+	    parmtag	{ "script_callback" "chooseInstance" }
+	    parmtag	{ "script_callback_language" "python" }
 	}
 	parm {
 	    name	"ChInst"
@@ -576,6 +578,8 @@
 	    type	button
 	    joinnext
 	    default	{ "0" }
+	    parmtag	{ "script_callback" "hou.pwd().hdaModule().chooseInstance(**kwargs)" }
+	    parmtag	{ "script_callback_language" "python" }
 	}
 	parm {
 	    name	"instance_type"
