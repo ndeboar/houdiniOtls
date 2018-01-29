@@ -1,7 +1,36 @@
 import zync_houdini as zh
 import os.path
 import htoa
-import zync
+import zync as z
+
+class nd_ZyncConnection(object):
+    instance = None
+
+    def __init__(self):
+        if not nd_ZyncConnection.instance:
+            nd_ZyncConnection.instance = nd_ZyncConnection.ZyncConnectionInner()
+
+
+    def __getattr__(self, name):
+        return getattr(self.instance, name)
+    class ZyncConnectionInner(object):
+        def __init__(self):
+            self.instance_types = {}
+            self.project_list = None
+            self.zync_conn = z.Zync(application='houdini')
+
+        def submit_job(self, hipPath, submitDict):
+            try:
+                self.zync_conn.submit_job(
+                'houdini', hipPath, submitDict)
+                hou.ui.displayMessage(text='Job submitted to Zync.')
+                post_submit_job(node)
+            except zync.ZyncError as e:
+                hou.ui.displayMessage(title='Submission Error',
+                text='Error submitting job: %s' % (str(e),),
+                severity=hou.severityType.Error)
+
+
 
 def login(**kwargs):
     zh.ZyncConnection().login()
@@ -10,13 +39,15 @@ def login(**kwargs):
 def submit(**kwargs):
     node = kwargs['node']
     houJob = zh.ZyncHoudiniJob(node)
-    _z= zync.Zync()
+    zyncCon = nd_ZyncConnection()
     jobs = []
         
     arRops = node.inputs()
     for arRop in arRops:
-        outPicture = arRop.parm('ar_picture').unexpandedString()
-        outPicture = os.path.split(outPicture)
+        outDir = arRop.parm('ar_picture').evalAsString()
+        outDir = os.path.split(outDir)[0]
+        outFile = arRop.parm('ar_picture').unexpandedString()
+        outFile = os.path.split(outFile)[1]
         frames = arRop.parmTuple('f').eval()        
         houdini_version = hou.applicationVersion()
         
@@ -25,7 +56,7 @@ def submit(**kwargs):
         'skip_download': node.evalParm('skip_download'),
         'frame_end': frames[1],
         'override_res': 0,
-        'output_filename': outPicture[1],
+        'output_filename': outFile,
         'use_standalone': node.evalParm('use_standalone'),
         'step': frames[2],
         'renderer': 'arnold',
@@ -40,24 +71,20 @@ def submit(**kwargs):
         'notify_complete': node.evalParm('notify_complete'),
         'priority': node.evalParm('priority'),
         'instance_type': node.evalParm('instance_type'),
-        'output_dir': outPicture[0],
+        'output_dir': outDir,
         'xres': 1,
         'render_node': arRop.path(),
         'yres': 1}
-                
-        try:
-            _z.submit_job('houdini', houJob.scene_path(), params=submitDict)
-            print ('Submitted ' + arRop.name())
-        except Exception as e:
-            hou.ui.displayMessage(text=str(e), title='Job submission failed')
+        print submitDict
 
-    hou.ui.displayMessage(text='Job submitted to Zync.')
+        zyncCon.submit_job(houJob.scene_path(), submitDict)
+
 
 
 def chooseProject(**kwargs):
     node = kwargs['node']
-    _z= zync.Zync()
-    projList = _z.get_project_list()
+    zyncCon = zh.ZyncConnection()
+    projList = zyncCon.get_project_list()
     proj = hou.ui.selectFromList([pName['name'] for pName in projList],
         exclusive=True,
         title='Projects',
