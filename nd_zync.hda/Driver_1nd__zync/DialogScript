@@ -524,32 +524,124 @@
 	name	"Login"
 	label	"Login"
 	type	button
-	joinnext
 	default	{ "0" }
 	parmtag	{ "script_callback" "hou.pwd().hdaModule().login(**kwargs)" }
 	parmtag	{ "script_callback_language" "python" }
     }
-    parm {
-	name	"logged_name2"
-	label	"logged_name2"
-	type	label
-	nolabel
-	joinnext
-	default	{ "" }
+    groupsimple {
+	name	"_"
+	label	"Login Details"
+	hidewhentab	"{ logged_in == 0 }"
+
+	parm {
+	    name	"logged_name2"
+	    label	"logged_name2"
+	    type	label
+	    nolabel
+	    joinnext
+	    default	{ "" }
+	}
+	parm {
+	    name	"logged_name1"
+	    label	"Label"
+	    type	label
+	    nolabel
+	    default	{ "" }
+	}
+	parm {
+	    name	"sepparm"
+	    label	"Separator"
+	    type	separator
+	    default	{ "" }
+	}
+	parm {
+	    name	"chProj"
+	    label	"Project"
+	    type	button
+	    joinnext
+	    default	{ "0" }
+	    parmtag	{ "script_callback" "hou.pwd().hdaModule().chooseProject(**kwargs)" }
+	    parmtag	{ "script_callback_language" "python" }
+	}
+	parm {
+	    name	"proj_name"
+	    label	"Project Name"
+	    type	string
+	    nolabel
+	    default	{ "" }
+	}
+	parm {
+	    name	"ChInst"
+	    label	"Instance Type"
+	    type	button
+	    joinnext
+	    default	{ "0" }
+	}
+	parm {
+	    name	"instance_type"
+	    label	"Instance Type"
+	    type	string
+	    nolabel
+	    default	{ "(PREEMPTIBLE) zync-64vcpu-128gb" }
+	}
+	parm {
+	    name	"num_instances"
+	    label	"Instances"
+	    type	integer
+	    default	{ "100" }
+	    range	{ 1 100 }
+	}
+	parm {
+	    name	"chunk_size"
+	    label	"Chunk Size"
+	    type	integer
+	    default	{ "1" }
+	    range	{ 0 10 }
+	}
+	parm {
+	    name	"priority"
+	    label	"Priority"
+	    type	integer
+	    default	{ "50" }
+	    range	{ 0 10 }
+	}
+	parm {
+	    name	"sepparm2"
+	    label	"Separator"
+	    type	separator
+	    default	{ "" }
+	}
+	parm {
+	    name	"skip_download"
+	    label	"Skip Download"
+	    type	toggle
+	    joinnext
+	    default	{ "0" }
+	}
+	parm {
+	    name	"use_standalone"
+	    label	"Use Standalone"
+	    type	toggle
+	    joinnext
+	    default	{ "0" }
+	    parmtag	{ "export_disable" "1" }
+	}
+	parm {
+	    name	"upload_only"
+	    label	"Upload Only"
+	    type	toggle
+	    joinnext
+	    default	{ "0" }
+	}
+	parm {
+	    name	"notify_complete"
+	    label	"Notify on Completion"
+	    type	toggle
+	    default	{ "0" }
+	    range	{ 0 10 }
+	}
     }
-    parm {
-	name	"logged_name1"
-	label	"Label"
-	type	label
-	nolabel
-	default	{ "" }
-    }
-    parm {
-	name	"sepparm"
-	label	"Separator"
-	type	separator
-	default	{ "" }
-    }
+
     parm {
 	name	"logged_in"
 	label	"logged_in"
@@ -557,86 +649,6 @@
 	invisible
 	nolabel
 	default	{ "0" }
-    }
-    parm {
-	name	"chProj"
-	label	"Project"
-	type	button
-	joinnext
-	default	{ "0" }
-	parmtag	{ "script_callback" "hou.pwd().hdaModule().chooseProject(**kwargs)" }
-	parmtag	{ "script_callback_language" "python" }
-    }
-    parm {
-	name	"proj_name"
-	label	"Project Name"
-	type	string
-	nolabel
-	default	{ "" }
-    }
-    parm {
-	name	"ChInst"
-	label	"Instance Type"
-	type	button
-	joinnext
-	default	{ "0" }
-    }
-    parm {
-	name	"instance_type"
-	label	"Instance Type"
-	type	string
-	nolabel
-	default	{ "(PREEMPTIBLE) zync-64vcpu-128gb" }
-    }
-    parm {
-	name	"num_instances"
-	label	"Instances"
-	type	integer
-	default	{ "100" }
-	range	{ 1 100 }
-    }
-    parm {
-	name	"chunk_size"
-	label	"Chunk Size"
-	type	integer
-	default	{ "1" }
-	range	{ 0 10 }
-    }
-    parm {
-	name	"priority"
-	label	"Priority"
-	type	integer
-	default	{ "50" }
-	range	{ 0 10 }
-    }
-    parm {
-	name	"skip_download"
-	label	"Skip Download"
-	type	toggle
-	joinnext
-	default	{ "0" }
-    }
-    parm {
-	name	"use_standalone"
-	label	"Use Standalone"
-	type	toggle
-	joinnext
-	default	{ "0" }
-	parmtag	{ "export_disable" "1" }
-    }
-    parm {
-	name	"upload_only"
-	label	"Upload Only"
-	type	toggle
-	joinnext
-	default	{ "0" }
-    }
-    parm {
-	name	"notify_complete"
-	label	"Notify on Completion"
-	type	toggle
-	default	{ "0" }
-	range	{ 0 10 }
     }
     parm {
 	name	"execute"

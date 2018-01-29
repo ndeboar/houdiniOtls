@@ -1,0 +1,2 @@
+import zync_houdini as zh
+zh.update_node_login(kwargs['node'])

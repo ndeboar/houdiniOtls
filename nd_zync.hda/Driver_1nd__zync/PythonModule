@@ -75,7 +75,7 @@ def submit(**kwargs):
         'xres': 1,
         'render_node': arRop.path(),
         'yres': 1}
-        print submitDict
+        #print submitDict
 
         zyncCon.submit_job(houJob.scene_path(), submitDict)
 
