@@ -24,7 +24,6 @@ class nd_ZyncConnection(object):
             try:
                 self.zync_conn.submit_job(
                 'houdini', hipPath, submitDict)
-                hou.ui.displayMessage(text='Job submitted to Zync.')
             except z.ZyncError as e:
                 hou.ui.displayMessage(title='Submission Error',
                 text='Error submitting job: %s' % (str(e),),
@@ -89,6 +88,7 @@ def submit(**kwargs):
         arRop.parm('ar_exr_autocrop').set(1)
 
         zyncCon.submit_job(houJob.scene_path(), submitDict)
+    hou.ui.displayMessage(text='Job submitted to Zync.')
 
 
 
