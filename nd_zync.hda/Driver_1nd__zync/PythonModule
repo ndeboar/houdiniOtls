@@ -98,10 +98,11 @@ def chooseProject(**kwargs):
     projList = zyncCon.get_project_list()
     proj = hou.ui.selectFromList([pName['name'] for pName in projList],
         exclusive=True,
+        clear_on_cancel=True,
         title='Projects',
         num_visible_rows=len(projList))
-    #print(projList[proj[0]]['name'])
-    node.parm('proj_name').set(projList[proj[0]]['name'])
+    if proj:
+    	node.parm('proj_name').set(projList[proj[0]]['name'])
 
 def chooseInstance(**kwargs):
     node = kwargs['node']
