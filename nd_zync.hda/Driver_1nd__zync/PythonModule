@@ -86,7 +86,6 @@ def submit(**kwargs):
         #settings on arnold node
         arRop.parm('ar_log_verbosity').set('detailed') #enable better logging
         arRop.parm('ar_exr_autocrop').set(1)
-
         zyncCon.submit_job(houJob.scene_path(), submitDict)
     hou.ui.displayMessage(text='Job submitted to Zync.')
 
@@ -110,8 +109,9 @@ def chooseInstance(**kwargs):
     machines = zyncCon.get_machine_types(renderer='houdini')
     machine = hou.ui.selectFromList(machines.keys(),
         exclusive=True,
+        clear_on_cancel=True,
         title='Instances',
         num_visible_rows=len(machines))
-    #print(projList[proj[0]]['name'])
-    machine = machine[0]
-    node.parm('instance_type').set(machines.keys()[machine])
+    if machine:
+    	machine = machine[0]
+    	node.parm('instance_type').set(machines.keys()[machine])

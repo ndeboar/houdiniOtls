@@ -1,0 +1,14 @@
+Operator:     deadline
+Label:        Deadline
+Path:         oplib:/Driver/deadline?Driver/deadline
+Icon:         opdef:/Driver/deadline?IconImage
+Table:        Driver
+License:      
+Extra:        
+User:         
+Inputs:       0 to 999
+Subnet:       false
+Python:       false
+Empty:        false
+Modified:     Wed Feb 14 16:38:27 2018
+

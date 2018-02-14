@@ -1,0 +1,9 @@
+import hou
+import json
+
+from CallDeadlineCommand import CallDeadlineCommand
+
+subInfo = json.loads( CallDeadlineCommand( [ "-prettyJSON", "-GetSubmissionInfo", "Pools", "Groups", "MaxPriority", "TaskLimit", "UserHomeDir", "RepoDir:submission/Houdini/Main", "RepoDir:submission/Integration/Main", "RepoDirNoCustom:draft", "RepoDirNoCustom:submission/Jigsaw", ] ) )
+
+hou.putenv( "Deadline_Submission_Info", json.dumps( subInfo["result"] ) )
+
