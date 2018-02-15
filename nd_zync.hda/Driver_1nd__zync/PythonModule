@@ -24,11 +24,9 @@ class nd_ZyncConnection(object):
             try:
                 self.zync_conn.submit_job(
                 'houdini', hipPath, submitDict)
+                print('Submitted %s to Zync' %submitDict['render_node'])
             except z.ZyncError as e:
-                hou.ui.displayMessage(title='Submission Error',
-                text='Error submitting job: %s' % (str(e),),
-                severity=hou.severityType.Error)
-
+                print('Error submitting job: %s' %str(e))
 
 
 def login(**kwargs):
@@ -87,7 +85,7 @@ def submit(**kwargs):
         arRop.parm('ar_log_verbosity').set('detailed') #enable better logging
         arRop.parm('ar_exr_autocrop').set(1)
         zyncCon.submit_job(houJob.scene_path(), submitDict)
-    hou.ui.displayMessage(text='Job submitted to Zync.')
+    #hou.ui.displayMessage(text='Job submitted to Zync.')
 
 
 

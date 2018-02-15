@@ -4,7 +4,12 @@ import traceback
 from CallDeadlineCommand import CallDeadlineCommand
 
 def SubmitToDeadline():
-
+    if hou.hipFile.hasUnsavedChanges():
+        save_file_response = hou.ui.displayMessage(
+        "There are some unsaved changes. Do you want to save the file before "
+        "submitting to Deadline?", buttons=("Yes", "No"))
+        if save_file_response == 0:
+            hou.hipFile.save()
     # Get the repository path
     path = CallDeadlineCommand( [ "-GetRepositoryPath", "submission/Houdini/Main" ] ).strip()
     if path != "":
@@ -19,6 +24,7 @@ def SubmitToDeadline():
         try:
             import SubmitDeadlineRop
             SubmitDeadlineRop.SubmitToDeadline()
+            hou.ui.displayMessage('Job Submited to Deadline')
         except:
             print( traceback.format_exc() )
             print( "The SubmitDeadlineRop.py script could not be found in the Deadline Repository. Please make sure that the Deadline Client has been installed on this machine, that the Deadline Client bin folder is set in the DEADLINE_PATH environment variable, and that the Deadline Client has been configured to point to a valid Repository." )
