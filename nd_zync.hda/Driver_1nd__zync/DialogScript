@@ -511,201 +511,202 @@
     inputlabel	500	"Sub-Network Input #500"
 
     parm {
-	name	"Submit"
-	label	"Submit"
-	type	button
-	joinnext
-	default	{ "0" }
-	hidewhen	"{ logged_in == 0 }"
-	parmtag	{ "button_icon" "" }
-	parmtag	{ "script_callback" "hou.pwd().hdaModule().submit(**kwargs)" }
-	parmtag	{ "script_callback_language" "python" }
+        name    "Submit"
+        label   "Submit"
+        type    button
+        joinnext
+        default { "0" }
+        hidewhen "{ logged_in == 0 }"
+        parmtag { "button_icon" "" }
+        parmtag { "script_callback" "hou.pwd().hdaModule().submit(**kwargs)" }
+        parmtag { "script_callback_language" "python" }
     }
     parm {
-	name	"Login"
-	label	"Login"
-	type	button
-	default	{ "0" }
-	hidewhen	"{ logged_in == 1 }"
-	parmtag	{ "script_callback" "hou.pwd().hdaModule().login(**kwargs)" }
-	parmtag	{ "script_callback_language" "python" }
+        name    "Login"
+        label   "Login"
+        type    button
+        default { "0" }
+        hidewhen "{ logged_in == 1 }"
+        parmtag { "script_callback" "hou.pwd().hdaModule().login(**kwargs)" }
+        parmtag { "script_callback_language" "python" }
     }
     groupsimple {
-	name	"_"
-	label	"Login Details"
-	hidewhentab	"{ logged_in == 0 }"
+        name    "_"
+        label   "Login Details"
+        hidewhentab "{ logged_in == 0 }"
 
-	parm {
-	    name	"logged_name2"
-	    label	"logged_name2"
-	    type	label
-	    nolabel
-	    joinnext
-	    default	{ "" }
-	}
-	parm {
-	    name	"logged_name1"
-	    label	"Label"
-	    type	label
-	    nolabel
-	    default	{ "" }
-	}
-	parm {
-	    name	"sepparm"
-	    label	"Separator"
-	    type	separator
-	    default	{ "" }
-	}
-	parm {
-	    name	"chProj"
-	    label	"Project"
-	    type	button
-	    joinnext
-	    default	{ "0" }
-	    parmtag	{ "script_callback" "hou.pwd().hdaModule().chooseProject(**kwargs)" }
-	    parmtag	{ "script_callback_language" "python" }
-	}
-	parm {
-	    name	"proj_name"
-	    label	"Project Name"
-	    type	string
-	    nolabel
-	    default	{ "" }
-	    parmtag	{ "script_callback" "" }
-	    parmtag	{ "script_callback_language" "python" }
-	}
-	parm {
-	    name	"ChInst"
-	    label	"Instance Type"
-	    type	button
-	    joinnext
-	    default	{ "0" }
-	    parmtag	{ "script_callback" "hou.pwd().hdaModule().chooseInstance(**kwargs)" }
-	    parmtag	{ "script_callback_language" "python" }
-	}
-	parm {
-	    name	"instance_type"
-	    label	"Instance Type"
-	    type	string
-	    nolabel
-	    default	{ "(PREEMPTIBLE) zync-64vcpu-128gb" }
-	}
-	parm {
-	    name	"num_instances"
-	    label	"Instances"
-	    type	integer
-	    default	{ "100" }
-	    range	{ 1 100 }
-	}
-	parm {
-	    name	"chunk_size"
-	    label	"Chunk Size"
-	    type	integer
-	    default	{ "1" }
-	    range	{ 0 10 }
-	}
-	parm {
-	    name	"priority"
-	    label	"Priority"
-	    type	integer
-	    default	{ "50" }
-	    range	{ 0 10 }
-	}
-	parm {
-	    name	"sepparm2"
-	    label	"Separator"
-	    type	separator
-	    default	{ "" }
-	}
-	parm {
-	    name	"skip_download"
-	    label	"Skip Download"
-	    type	toggle
-	    joinnext
-	    default	{ "0" }
-	}
-	parm {
-	    name	"use_standalone"
-	    label	"Use Standalone"
-	    type	toggle
-	    joinnext
-	    default	{ "0" }
-	    parmtag	{ "export_disable" "1" }
-	}
-	parm {
-	    name	"upload_only"
-	    label	"Upload Only"
-	    type	toggle
-	    joinnext
-	    default	{ "0" }
-	}
-	parm {
-	    name	"notify_complete"
-	    label	"Notify on Completion"
-	    type	toggle
-	    default	{ "0" }
-	    range	{ 0 10 }
-	}
+        parm {
+            name    "logged_name2"
+            label   "logged_name2"
+            type    label
+            nolabel
+            joinnext
+            default { "" }
+        }
+        parm {
+            name    "logged_name1"
+            label   "Label"
+            type    label
+            nolabel
+            default { "" }
+        }
+        parm {
+            name    "sepparm"
+            label   "Separator"
+            type    separator
+            default { "" }
+        }
+        parm {
+            name    "chProj"
+            label   "Project"
+            type    button
+            joinnext
+            default { "0" }
+            parmtag { "script_callback" "hou.pwd().hdaModule().chooseProject(**kwargs)" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "proj_name"
+            label   "Project Name"
+            type    string
+            nolabel
+            default { "" }
+            parmtag { "script_callback" "" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "ChInst"
+            label   "Instance Type"
+            type    button
+            joinnext
+            default { "0" }
+            parmtag { "script_callback" "hou.pwd().hdaModule().chooseInstance(**kwargs)" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "instance_type"
+            label   "Instance Type"
+            type    string
+            nolabel
+            default { "(PREEMPTIBLE) zync-64vcpu-128gb" }
+        }
+        parm {
+            name    "num_instances"
+            label   "Instances"
+            type    integer
+            default { "100" }
+            range   { 1 100 }
+        }
+        parm {
+            name    "chunk_size"
+            label   "Chunk Size"
+            type    integer
+            default { "1" }
+            range   { 0 10 }
+        }
+        parm {
+            name    "priority"
+            label   "Priority"
+            type    integer
+            default { "50" }
+            range   { 0 10 }
+        }
+        parm {
+            name    "sepparm2"
+            label   "Separator"
+            type    separator
+            default { "" }
+        }
+        parm {
+            name    "skip_download"
+            label   "Skip Download"
+            type    toggle
+            joinnext
+            default { "0" }
+        }
+        parm {
+            name    "use_standalone"
+            label   "Use Standalone"
+            type    toggle
+            joinnext
+            default { "0" }
+            parmtag { "export_disable" "1" }
+        }
+        parm {
+            name    "upload_only"
+            label   "Upload Only"
+            type    toggle
+            joinnext
+            default { "0" }
+        }
+        parm {
+            name    "notify_complete"
+            label   "Notify on Completion"
+            type    toggle
+            default { "0" }
+            range   { 0 10 }
+        }
     }
 
     parm {
-	name	"logged_in"
-	label	"logged_in"
-	type	toggle
-	invisible
-	nolabel
-	default	{ "0" }
+        name    "logged_in"
+        label   "logged_in"
+        type    toggle
+        invisible
+        nolabel
+        default { "0" }
     }
     parm {
-	name	"execute"
-	baseparm
-	label	"Render to Disk"
-	invisible
-	joinnext
-	export	none
+        name    "execute"
+        baseparm
+        label   "Render to Disk"
+        invisible
+        joinnext
+        export  none
     }
     parm {
-	name	"renderpreview"
-	baseparm
-	label	"Render to MPlay"
-	invisible
-	joinnext
-	export	none
+        name    "renderpreview"
+        baseparm
+        label   "Render to MPlay"
+        invisible
+        joinnext
+        export  none
     }
     parm {
-	name	"executebackground"
-	baseparm
-	label	"Render to Disk in Background"
-	invisible
-	joinnext
-	export	none
+        name    "executebackground"
+        baseparm
+        label   "Render to Disk in Background"
+        invisible
+        joinnext
+        export  none
     }
     parm {
-	name	"renderdialog"
-	baseparm
-	label	"Controls..."
-	invisible
-	export	none
+        name    "renderdialog"
+        baseparm
+        label   "Controls..."
+        nolabel
+        invisible
+        export  none
     }
     parm {
-	name	"trange"
-	baseparm
-	label	"Valid Frame Range"
-	invisible
-	export	none
+        name    "trange"
+        baseparm
+        label   "Valid Frame Range"
+        invisible
+        export  none
     }
     parm {
-	name	"f"
-	baseparm
-	label	"Start/End/Inc"
-	invisible
-	export	none
+        name    "f"
+        baseparm
+        label   "Start/End/Inc"
+        invisible
+        export  none
     }
     parm {
-	name	"take"
-	baseparm
-	label	"Render With Take"
-	invisible
-	export	none
+        name    "take"
+        baseparm
+        label   "Render With Take"
+        invisible
+        export  none
     }
 }

@@ -1,0 +1,15 @@
+Operator:     nd_image
+Label:        Nd image
+Path:         oplib:/Vop/nd_image?Vop/nd_image
+Icon:         VOP_nd_image
+Table:        Vop
+License:      
+Extra:        
+User:         
+Inputs:       0 to 4
+Outputs:      2048
+Subnet:       true
+Python:       false
+Empty:        false
+Modified:     Wed Feb 28 16:02:54 2018
+

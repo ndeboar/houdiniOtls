@@ -556,18 +556,21 @@
         name    "trange"
         baseparm
         label   "Valid Frame Range"
+        invisible
         export  none
     }
     parm {
         name    "f"
         baseparm
         label   "Start/End/Inc"
+        invisible
         export  none
     }
     parm {
         name    "take"
         baseparm
         label   "Render With Take"
+        invisible
         export  none
     }
     parm {
@@ -586,34 +589,6 @@
         default { "2" }
         range   { 0 10 }
     }
-    group {
-        name    "dl_job_description"
-        label   "Job Description"
-
-        parm {
-            name    "dl_job_name"
-            label   "Job Name"
-            type    string
-            default { [ "$HIPNAME" hscript-expr ] }
-            range   { 0 1 }
-            parmtag { "autoscope" "0000000000000000" }
-        }
-        parm {
-            name    "dl_comment"
-            label   "Comment"
-            type    string
-            default { "" }
-            range   { 0 1 }
-        }
-        parm {
-            name    "dl_department"
-            label   "Department"
-            type    string
-            default { "" }
-            range   { 0 1 }
-        }
-    }
-
     group {
         name    "dl_job_description_1"
         label   "Job Options"
@@ -790,6 +765,34 @@
     }
 
     group {
+        name    "dl_job_description"
+        label   "Job Description"
+
+        parm {
+            name    "dl_job_name"
+            label   "Job Name"
+            type    string
+            default { [ "$HIPNAME" hscript-expr ] }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+        }
+        parm {
+            name    "dl_comment"
+            label   "Comment"
+            type    string
+            default { "" }
+            range   { 0 1 }
+        }
+        parm {
+            name    "dl_department"
+            label   "Department"
+            type    string
+            default { "" }
+            range   { 0 1 }
+        }
+    }
+
+    group {
         name    "dl_job_description_2"
         label   "GPU Affinity Overrides"
 
@@ -917,7 +920,7 @@
             label   "Background Image File"
             type    file
             default { "" }
-            disablewhen "{ dl_tiles_enabled != on } { dl_submit_dependent_assembly != on } { dl_background_option != Selected Image }"
+            disablewhen "{ dl_tiles_enabled != on } { dl_submit_dependent_assembly != on } { dl_background_option != Selected Image == \"\" }"
         }
     }
 
