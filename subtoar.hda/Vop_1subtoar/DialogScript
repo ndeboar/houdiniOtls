@@ -19,10 +19,29 @@
     }
 
     parm {
-	name	"texPath"
-	label	"Texture Path"
-	type	file
-	default	{ "" }
-	help	"Select any exported substance texture"
+        name    "texPath"
+        label   "Texture Path"
+        type    file
+        default { "" }
+        help    "Select any exported substance texture"
+    }
+    parm {
+        name    "udim"
+        label   "udim"
+        type    toggle
+        default { "0" }
+    }
+    parm {
+        name    "useTx"
+        label   "Use TX"
+        type    toggle
+        default { "0" }
+    }
+    parm {
+        name    "bumpHeight"
+        label   "Bump Height"
+        type    float
+        default { "1" }
+        range   { 0 20 }
     }
 }

@@ -5,7 +5,11 @@ def getPath(subfile):
     file = texPath[1].split('_')
     file.pop(len(file)-1)
     file = '_'.join(file)
-    return('%s/%s_%s.exr'%(texPath[0],file,subfile))
-
-def test():
-    return('works')
+    ext = 'exr'
+    if hou.parm('../useTx').eval()==1:
+        ext = 'tx'
+    if hou.parm('../udim').eval()==1:
+        out = ('%s/%s_%s.<udim>.%s'%(texPath[0],file,subfile,ext))
+    else:
+        out = ('%s/%s_%s.%s'%(texPath[0],file,subfile,ext))
+    return(out)

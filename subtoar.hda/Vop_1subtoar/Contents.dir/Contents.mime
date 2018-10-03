@@ -19,7 +19,7 @@ Content-Disposition: attachment; filename="hdaroot.def"
 Content-Type: text/plain
 
 comment ""
-position -4.15882 0.3
+position -4.53506 -7.36464
 connectornextid 1
 flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
 outputsNamed3
@@ -34,8 +34,8 @@ inputs
 }
 stat
 {
-  create 1515561183
-  modify 1515565378
+  create 1537489711
+  modify 1537489741
   author Administrator@user-PC
   access 0777
 }
@@ -77,7 +77,7 @@ Content-Type: text/plain
 comment ""
 position -10.9608 -9.18855
 connectornextid 2
-flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail on mediumdetail off highdetail off material off
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
 outputsNamed3
 {
 0 "rgba"
@@ -92,7 +92,7 @@ inputs
 stat
 {
   create 1515477413
-  modify 1515565366
+  modify 1537489721
   author Administrator@user-PC
   access 0777
 }
@@ -106,163 +106,171 @@ Content-Disposition: attachment; filename="hdaroot/Height.spareparmdef"
 Content-Type: text/plain
 
     parm {
-	name	"subTex"
-	label	"Substance Texture"
-	type	string
-	default	{ "" }
+        name    "subTex"
+        label   "Substance Texture"
+        type    string
+        default { "" }
     }
     group {
-	name	"folder2"
-	label	"Texture"
+        name    "folder2"
+        label   "Texture"
 
-	parm {
-	    name	"filename"
-	    baseparm
-	    label	"Filename"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"reload"
-	    baseparm
-	    label	"Reload"
-	    export	none
-	}
-	parm {
-	    name	"multiply"
-	    baseparm
-	    label	"Multiply"
-	    export	none
-	}
-	parm {
-	    name	"offset"
-	    baseparm
-	    label	"Offset"
-	    export	none
-	}
-	parm {
-	    name	"color_space"
-	    baseparm
-	    label	"Color Space"
-	    export	none
-	}
-	parm {
-	    name	"filter"
-	    baseparm
-	    label	"Filter"
-	    export	none
-	}
-	parm {
-	    name	"mipmap_bias"
-	    baseparm
-	    label	"Mipmap Bias"
-	    export	none
-	}
-	parm {
-	    name	"single_channel"
-	    baseparm
-	    label	"Single Channel"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"start_channel"
-	    baseparm
-	    label	"Single Channel"
-	    export	none
-	}
-	parm {
-	    name	"missing_texture_color"
-	    baseparm
-	    label	"Missing Texture Color"
-	    export	none
-	}
-	parm {
-	    name	"ignore_missing_textures"
-	    baseparm
-	    label	"Ignore Missing Texture Errors"
-	    export	none
-	}
-	parm {
-	    name	"autotx"
-	    baseparm
-	    label	"Auto-generate TX Textures"
-	    export	none
-	}
+        parm {
+            name    "filename"
+            baseparm
+            label   "Filename"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "reload"
+            baseparm
+            label   "Reload"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "multiply"
+            baseparm
+            label   "Multiply"
+            export  none
+        }
+        parm {
+            name    "offset"
+            baseparm
+            label   "Offset"
+            export  none
+        }
+        parm {
+            name    "color_space"
+            baseparm
+            label   "Color Space"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "filter"
+            baseparm
+            label   "Filter"
+            export  none
+        }
+        parm {
+            name    "mipmap_bias"
+            baseparm
+            label   "Mipmap Bias"
+            export  none
+        }
+        parm {
+            name    "single_channel"
+            baseparm
+            label   "Single Channel"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "start_channel"
+            baseparm
+            label   "Single Channel"
+            export  none
+        }
+        parm {
+            name    "missing_texture_color"
+            baseparm
+            label   "Missing Texture Color"
+            export  none
+        }
+        parm {
+            name    "ignore_missing_textures"
+            baseparm
+            label   "Ignore Missing Texture Errors"
+            export  none
+        }
+        parm {
+            name    "autotx"
+            baseparm
+            label   "Auto-generate TX Textures"
+            export  none
+        }
     }
 
     group {
-	name	"folder2_1"
-	label	" UV "
+        name    "folder2_1"
+        label   " UV "
 
-	parm {
-	    name	"uvcoords"
-	    baseparm
-	    label	"Custom UVs"
-	    export	none
-	}
-	parm {
-	    name	"uvset"
-	    baseparm
-	    label	"UV Set"
-	    export	none
-	}
-	parm {
-	    name	"soffset"
-	    baseparm
-	    label	"Offset U"
-	    export	none
-	}
-	parm {
-	    name	"toffset"
-	    baseparm
-	    label	"Offset V"
-	    export	none
-	}
-	parm {
-	    name	"sscale"
-	    baseparm
-	    label	"Scale U"
-	    export	none
-	}
-	parm {
-	    name	"tscale"
-	    baseparm
-	    label	"Scale V"
-	    export	none
-	}
-	parm {
-	    name	"swrap"
-	    baseparm
-	    label	"Wrap U"
-	    export	none
-	}
-	parm {
-	    name	"twrap"
-	    baseparm
-	    label	"Wrap V"
-	    export	none
-	}
-	parm {
-	    name	"swap_st"
-	    baseparm
-	    label	"Swap U & V"
-	    export	none
-	}
-	parm {
-	    name	"sflip"
-	    baseparm
-	    label	"Flip U"
-	    export	none
-	}
-	parm {
-	    name	"tflip"
-	    baseparm
-	    label	"Flip V"
-	    export	none
-	}
+        parm {
+            name    "uvcoords"
+            baseparm
+            label   "Custom UVs"
+            export  none
+        }
+        parm {
+            name    "uvset"
+            baseparm
+            label   "UV Set"
+            export  none
+        }
+        parm {
+            name    "soffset"
+            baseparm
+            label   "Offset U"
+            export  none
+        }
+        parm {
+            name    "toffset"
+            baseparm
+            label   "Offset V"
+            export  none
+        }
+        parm {
+            name    "sscale"
+            baseparm
+            label   "Scale U"
+            export  none
+        }
+        parm {
+            name    "tscale"
+            baseparm
+            label   "Scale V"
+            export  none
+        }
+        parm {
+            name    "swrap"
+            baseparm
+            label   "Wrap U"
+            export  none
+        }
+        parm {
+            name    "twrap"
+            baseparm
+            label   "Wrap V"
+            export  none
+        }
+        parm {
+            name    "swap_st"
+            baseparm
+            label   "Swap U & V"
+            export  none
+        }
+        parm {
+            name    "sflip"
+            baseparm
+            label   "Flip U"
+            export  none
+        }
+        parm {
+            name    "tflip"
+            baseparm
+            label   "Flip V"
+            export  none
+        }
     }
 
+    parm {
+        name    "color_family"
+        baseparm
+        label   "Color Space"
+        export  none
+    }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
 Content-Disposition: attachment; filename="hdaroot/Height.chn"
@@ -288,17 +296,18 @@ Content-Type: text/plain
 {
 version 0.8
 folder1	[ 0	locks=0 ]	(	0	0	)
-filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/houdiniNoodle/substance/Mesh_MAT_01_Head_Height.exr ] 	)
+filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/modsatellite/proj/sourceImages/envisatPannels/solar_1001_Height.exr ] 	)
 reload	[ 0	locks=0 ]	(	0	)
 multiply	[ 0	locks=0 ]	(	1	1	1	)
 offset	[ 0	locks=0 ]	(	0	0	0	)
+color_family	[ 0	locks=0 ]	(	""	)
 color_space	[ 0	locks=0 ]	(	linear	)
 filter	[ 0	locks=0 ]	(	smart_bicubic	)
 mipmap_bias	[ 0	locks=0 ]	(	0	)
 single_channel	[ 0	locks=0 ]	(	"off"	)
 start_channel	[ 0	locks=0 ]	(	0	)
 missing_texture_color	[ 0	locks=0 ]	(	0	0	0	0	)
-ignore_missing_textures	[ 0	locks=0 ]	(	"off"	)
+ignore_missing_textures	[ 0	locks=0 ]	(	"on"	)
 autotx	[ 0	locks=0 ]	(	"on"	)
 uvcoords	[ 0	locks=0 ]	(	0	0	)
 uvset	[ 0	locks=0 ]	(	""	)
@@ -322,7 +331,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -357,7 +366,7 @@ inputs
 stat
 {
   create 1515477416
-  modify 1515565376
+  modify 1537489722
   author Administrator@user-PC
   access 0777
 }
@@ -509,7 +518,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -540,7 +549,7 @@ inputs
 stat
 {
   create 1515477416
-  modify 1515565366
+  modify 1537489721
   author Administrator@user-PC
   access 0777
 }
@@ -564,7 +573,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -581,7 +590,7 @@ Content-Type: text/plain
 
 comment ""
 position 0.323943 -0.122313
-connectornextid 35
+connectornextid 39
 flags =  lock off model off template off footprint off xray off bypass off display on render on highlight off unload off savedata off compress on colordefault on exposed on lowdetail off mediumdetail off highdetail on material off
 outputsNamed3
 {
@@ -592,7 +601,7 @@ inputsNamed3
 0 	"" "" 1 "base"
 1 	BaseColor 0 1 "base_color"
 3 	"" "" 1 "diffuse_roughness"
-4 	Metalness 1 1 "metalness"
+4 	Metallic 1 1 "metalness"
 5 	"" "" 1 "specular"
 6 	"" "" 1 "specular_color"
 7 	Roughness 1 1 "specular_roughness"
@@ -609,27 +618,31 @@ inputsNamed3
 18 	"" "" 1 "subsurface_color"
 19 	"" "" 1 "subsurface_radius"
 20 	"" "" 1 "subsurface_scale"
-21 	"" "" 1 "coat"
-22 	"" "" 1 "coat_color"
-23 	"" "" 1 "coat_roughness"
-24 	"" "" 1 "coat_IOR"
-25 	"" "" 1 "coat_normal"
-26 	"" "" 1 "coat_affect_color"
-27 	"" "" 1 "coat_affect_roughness"
-28 	"" "" 1 "thin_film_thickness"
-29 	"" "" 1 "thin_film_IOR"
-30 	"" "" 1 "emission"
-31 	"" "" 1 "emission_color"
-32 	"" "" 1 "opacity"
-33 	normal_map1 1 1 "normal"
-34 	"" "" 1 "tangent"
+21 	"" "" 1 "subsurface_anisotropy"
+22 	"" "" 1 "coat"
+23 	"" "" 1 "coat_color"
+24 	"" "" 1 "coat_roughness"
+25 	"" "" 1 "coat_IOR"
+26 	"" "" 1 "coat_normal"
+27 	"" "" 1 "coat_affect_color"
+28 	"" "" 1 "coat_affect_roughness"
+29 	"" "" 1 "thin_film_thickness"
+30 	"" "" 1 "thin_film_IOR"
+31 	"" "" 1 "sheen"
+32 	"" "" 1 "sheen_color"
+33 	"" "" 1 "sheen_roughness"
+34 	"" "" 1 "emission"
+35 	"" "" 1 "emission_color"
+36 	"" "" 1 "opacity"
+37 	normal_map1 1 1 "normal"
+38 	"" "" 1 "tangent"
 }
 inputs
 {
 0 	"" 0 1
 1 	BaseColor 0 1
 2 	"" 0 1
-3 	Metalness 1 1
+3 	Metallic 1 1
 4 	"" 0 1
 5 	"" 0 1
 6 	Roughness 1 1
@@ -658,13 +671,17 @@ inputs
 29 	"" 0 1
 30 	"" 0 1
 31 	"" 0 1
-32 	normal_map1 0 1
+32 	"" 0 1
 33 	"" 0 1
+34 	"" 0 1
+35 	"" 0 1
+36 	normal_map1 0 1
+37 	"" 0 1
 }
 stat
 {
   create 1515478266
-  modify 1515565369
+  modify 1537489724
   author Administrator@user-PC
   access 0777
 }
@@ -699,11 +716,14 @@ transmission_scatter	[ 0	locks=0 ]	(	0	0	0	)
 transmission_scatter_anisotropy	[ 0	locks=0 ]	(	0	)
 transmission_dispersion	[ 0	locks=0 ]	(	0	)
 transmission_extra_roughness	[ 0	locks=0 ]	(	0	)
+transmit_aovs	[ 0	locks=0 ]	(	"off"	)
 subsurface_group	[ 0	locks=0 ]	(	0	)
+subsurface_type	[ 0	locks=0 ]	(	diffusion	)
 subsurface	[ 0	locks=0 ]	(	0	)
 subsurface_color	[ 0	locks=0 ]	(	1	1	1	)
 subsurface_radius	[ 0	locks=0 ]	(	1	1	1	)
 subsurface_scale	[ 0	locks=0 ]	(	1	)
+subsurface_anisotropy	[ 0	locks=0 ]	(	0	)
 coat_group	[ 0	locks=0 ]	(	0	)
 coat	[ 0	locks=0 ]	(	0	)
 coat_color	[ 0	locks=0 ]	(	1	1	1	)
@@ -715,6 +735,10 @@ coat_affect_roughness	[ 0	locks=0 ]	(	0	)
 thin_film_group	[ 0	locks=0 ]	(	0	)
 thin_film_thickness	[ 0	locks=0 ]	(	0	)
 thin_film_IOR	[ 0	locks=0 ]	(	1.5	)
+sheen_group	[ 0	locks=0 ]	(	0	)
+sheen	[ 0	locks=0 ]	(	0	)
+sheen_color	[ 0	locks=0 ]	(	1	1	1	)
+sheen_roughness	[ 0	locks=0 ]	(	0.30000001192092896	)
 emission_group	[ 0	locks=0 ]	(	0	)
 emission	[ 0	locks=0 ]	(	0	)
 emission_color	[ 0	locks=0 ]	(	1	1	1	)
@@ -723,6 +747,30 @@ opacity	[ 0	locks=0 ]	(	1	1	1	)
 normal	[ 0	locks=0 ]	(	0	0	0	)
 tangent	[ 0	locks=0 ]	(	0	0	0	)
 thin_walled	[ 0	locks=0 ]	(	"off"	)
+aov_group	[ 0	locks=0 ]	(	0	)
+aov_id1	[ 0	locks=0 ]	(	""	)
+id1	[ 0	locks=0 ]	(	0	0	0	)
+sep1	[ 0	locks=0 ]	(	)
+aov_id2	[ 0	locks=0 ]	(	""	)
+id2	[ 0	locks=0 ]	(	0	0	0	)
+sep2	[ 0	locks=0 ]	(	)
+aov_id3	[ 0	locks=0 ]	(	""	)
+id3	[ 0	locks=0 ]	(	0	0	0	)
+sep3	[ 0	locks=0 ]	(	)
+aov_id4	[ 0	locks=0 ]	(	""	)
+id4	[ 0	locks=0 ]	(	0	0	0	)
+sep4	[ 0	locks=0 ]	(	)
+aov_id5	[ 0	locks=0 ]	(	""	)
+id5	[ 0	locks=0 ]	(	0	0	0	)
+sep5	[ 0	locks=0 ]	(	)
+aov_id6	[ 0	locks=0 ]	(	""	)
+id6	[ 0	locks=0 ]	(	0	0	0	)
+sep6	[ 0	locks=0 ]	(	)
+aov_id7	[ 0	locks=0 ]	(	""	)
+id7	[ 0	locks=0 ]	(	0	0	0	)
+sep7	[ 0	locks=0 ]	(	)
+aov_id8	[ 0	locks=0 ]	(	""	)
+id8	[ 0	locks=0 ]	(	0	0	0	)
 advanced_group	[ 0	locks=0 ]	(	0	)
 indirect_diffuse	[ 0	locks=0 ]	(	1	)
 indirect_specular	[ 0	locks=0 ]	(	1	)
@@ -738,7 +786,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -770,7 +818,7 @@ inputs
 stat
 {
   create 1515477413
-  modify 1515565366
+  modify 1537489721
   author Administrator@user-PC
   access 0777
 }
@@ -784,163 +832,171 @@ Content-Disposition: attachment; filename="hdaroot/BaseColor.spareparmdef"
 Content-Type: text/plain
 
     parm {
-	name	"subTex"
-	label	"Substance Texture"
-	type	string
-	default	{ "" }
+        name    "subTex"
+        label   "Substance Texture"
+        type    string
+        default { "" }
     }
     group {
-	name	"folder2"
-	label	"Texture"
+        name    "folder2"
+        label   "Texture"
 
-	parm {
-	    name	"filename"
-	    baseparm
-	    label	"Filename"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"reload"
-	    baseparm
-	    label	"Reload"
-	    export	none
-	}
-	parm {
-	    name	"multiply"
-	    baseparm
-	    label	"Multiply"
-	    export	none
-	}
-	parm {
-	    name	"offset"
-	    baseparm
-	    label	"Offset"
-	    export	none
-	}
-	parm {
-	    name	"color_space"
-	    baseparm
-	    label	"Color Space"
-	    export	none
-	}
-	parm {
-	    name	"filter"
-	    baseparm
-	    label	"Filter"
-	    export	none
-	}
-	parm {
-	    name	"mipmap_bias"
-	    baseparm
-	    label	"Mipmap Bias"
-	    export	none
-	}
-	parm {
-	    name	"single_channel"
-	    baseparm
-	    label	"Single Channel"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"start_channel"
-	    baseparm
-	    label	"Single Channel"
-	    export	none
-	}
-	parm {
-	    name	"missing_texture_color"
-	    baseparm
-	    label	"Missing Texture Color"
-	    export	none
-	}
-	parm {
-	    name	"ignore_missing_textures"
-	    baseparm
-	    label	"Ignore Missing Texture Errors"
-	    export	none
-	}
-	parm {
-	    name	"autotx"
-	    baseparm
-	    label	"Auto-generate TX Textures"
-	    export	none
-	}
+        parm {
+            name    "filename"
+            baseparm
+            label   "Filename"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "reload"
+            baseparm
+            label   "Reload"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "multiply"
+            baseparm
+            label   "Multiply"
+            export  none
+        }
+        parm {
+            name    "offset"
+            baseparm
+            label   "Offset"
+            export  none
+        }
+        parm {
+            name    "color_space"
+            baseparm
+            label   "Color Space"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "filter"
+            baseparm
+            label   "Filter"
+            export  none
+        }
+        parm {
+            name    "mipmap_bias"
+            baseparm
+            label   "Mipmap Bias"
+            export  none
+        }
+        parm {
+            name    "single_channel"
+            baseparm
+            label   "Single Channel"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "start_channel"
+            baseparm
+            label   "Single Channel"
+            export  none
+        }
+        parm {
+            name    "missing_texture_color"
+            baseparm
+            label   "Missing Texture Color"
+            export  none
+        }
+        parm {
+            name    "ignore_missing_textures"
+            baseparm
+            label   "Ignore Missing Texture Errors"
+            export  none
+        }
+        parm {
+            name    "autotx"
+            baseparm
+            label   "Auto-generate TX Textures"
+            export  none
+        }
     }
 
     group {
-	name	"folder2_1"
-	label	" UV "
+        name    "folder2_1"
+        label   " UV "
 
-	parm {
-	    name	"uvcoords"
-	    baseparm
-	    label	"Custom UVs"
-	    export	none
-	}
-	parm {
-	    name	"uvset"
-	    baseparm
-	    label	"UV Set"
-	    export	none
-	}
-	parm {
-	    name	"soffset"
-	    baseparm
-	    label	"Offset U"
-	    export	none
-	}
-	parm {
-	    name	"toffset"
-	    baseparm
-	    label	"Offset V"
-	    export	none
-	}
-	parm {
-	    name	"sscale"
-	    baseparm
-	    label	"Scale U"
-	    export	none
-	}
-	parm {
-	    name	"tscale"
-	    baseparm
-	    label	"Scale V"
-	    export	none
-	}
-	parm {
-	    name	"swrap"
-	    baseparm
-	    label	"Wrap U"
-	    export	none
-	}
-	parm {
-	    name	"twrap"
-	    baseparm
-	    label	"Wrap V"
-	    export	none
-	}
-	parm {
-	    name	"swap_st"
-	    baseparm
-	    label	"Swap U & V"
-	    export	none
-	}
-	parm {
-	    name	"sflip"
-	    baseparm
-	    label	"Flip U"
-	    export	none
-	}
-	parm {
-	    name	"tflip"
-	    baseparm
-	    label	"Flip V"
-	    export	none
-	}
+        parm {
+            name    "uvcoords"
+            baseparm
+            label   "Custom UVs"
+            export  none
+        }
+        parm {
+            name    "uvset"
+            baseparm
+            label   "UV Set"
+            export  none
+        }
+        parm {
+            name    "soffset"
+            baseparm
+            label   "Offset U"
+            export  none
+        }
+        parm {
+            name    "toffset"
+            baseparm
+            label   "Offset V"
+            export  none
+        }
+        parm {
+            name    "sscale"
+            baseparm
+            label   "Scale U"
+            export  none
+        }
+        parm {
+            name    "tscale"
+            baseparm
+            label   "Scale V"
+            export  none
+        }
+        parm {
+            name    "swrap"
+            baseparm
+            label   "Wrap U"
+            export  none
+        }
+        parm {
+            name    "twrap"
+            baseparm
+            label   "Wrap V"
+            export  none
+        }
+        parm {
+            name    "swap_st"
+            baseparm
+            label   "Swap U & V"
+            export  none
+        }
+        parm {
+            name    "sflip"
+            baseparm
+            label   "Flip U"
+            export  none
+        }
+        parm {
+            name    "tflip"
+            baseparm
+            label   "Flip V"
+            export  none
+        }
     }
 
+    parm {
+        name    "color_family"
+        baseparm
+        label   "Color Space"
+        export  none
+    }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
 Content-Disposition: attachment; filename="hdaroot/BaseColor.chn"
@@ -966,17 +1022,18 @@ Content-Type: text/plain
 {
 version 0.8
 folder1	[ 0	locks=0 ]	(	0	0	)
-filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/houdiniNoodle/substance/Mesh_MAT_01_Head_BaseColor.exr ] 	)
+filename	[ 0	locks=0 ]	(	[ filename	D:/Documents/modsatellite/proj/sourceImages/envisatPannels/solar_1001_BaseColor.exr ] 	)
 reload	[ 0	locks=0 ]	(	0	)
 multiply	[ 0	locks=0 ]	(	1	1	1	)
 offset	[ 0	locks=0 ]	(	0	0	0	)
-color_space	[ 0	locks=0 ]	(	sRGB	)
+color_family	[ 0	locks=0 ]	(	""	)
+color_space	[ 0	locks=0 ]	(	linear	)
 filter	[ 0	locks=0 ]	(	smart_bicubic	)
 mipmap_bias	[ 0	locks=0 ]	(	0	)
 single_channel	[ 0	locks=0 ]	(	"off"	)
 start_channel	[ 0	locks=0 ]	(	0	)
 missing_texture_color	[ 0	locks=0 ]	(	0	0	0	0	)
-ignore_missing_textures	[ 0	locks=0 ]	(	"off"	)
+ignore_missing_textures	[ 0	locks=0 ]	(	"on"	)
 autotx	[ 0	locks=0 ]	(	"on"	)
 uvcoords	[ 0	locks=0 ]	(	0	0	)
 uvset	[ 0	locks=0 ]	(	""	)
@@ -1000,7 +1057,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -1032,7 +1089,7 @@ inputs
 stat
 {
   create 1515477413
-  modify 1515565366
+  modify 1537489721
   author Administrator@user-PC
   access 0777
 }
@@ -1046,163 +1103,171 @@ Content-Disposition: attachment; filename="hdaroot/Normal.spareparmdef"
 Content-Type: text/plain
 
     parm {
-	name	"subTex"
-	label	"Substance Texture"
-	type	string
-	default	{ "" }
+        name    "subTex"
+        label   "Substance Texture"
+        type    string
+        default { "" }
     }
     group {
-	name	"folder2"
-	label	"Texture"
+        name    "folder2"
+        label   "Texture"
 
-	parm {
-	    name	"filename"
-	    baseparm
-	    label	"Filename"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"reload"
-	    baseparm
-	    label	"Reload"
-	    export	none
-	}
-	parm {
-	    name	"multiply"
-	    baseparm
-	    label	"Multiply"
-	    export	none
-	}
-	parm {
-	    name	"offset"
-	    baseparm
-	    label	"Offset"
-	    export	none
-	}
-	parm {
-	    name	"color_space"
-	    baseparm
-	    label	"Color Space"
-	    export	none
-	}
-	parm {
-	    name	"filter"
-	    baseparm
-	    label	"Filter"
-	    export	none
-	}
-	parm {
-	    name	"mipmap_bias"
-	    baseparm
-	    label	"Mipmap Bias"
-	    export	none
-	}
-	parm {
-	    name	"single_channel"
-	    baseparm
-	    label	"Single Channel"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"start_channel"
-	    baseparm
-	    label	"Single Channel"
-	    export	none
-	}
-	parm {
-	    name	"missing_texture_color"
-	    baseparm
-	    label	"Missing Texture Color"
-	    export	none
-	}
-	parm {
-	    name	"ignore_missing_textures"
-	    baseparm
-	    label	"Ignore Missing Texture Errors"
-	    export	none
-	}
-	parm {
-	    name	"autotx"
-	    baseparm
-	    label	"Auto-generate TX Textures"
-	    export	none
-	}
+        parm {
+            name    "filename"
+            baseparm
+            label   "Filename"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "reload"
+            baseparm
+            label   "Reload"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "multiply"
+            baseparm
+            label   "Multiply"
+            export  none
+        }
+        parm {
+            name    "offset"
+            baseparm
+            label   "Offset"
+            export  none
+        }
+        parm {
+            name    "color_space"
+            baseparm
+            label   "Color Space"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "filter"
+            baseparm
+            label   "Filter"
+            export  none
+        }
+        parm {
+            name    "mipmap_bias"
+            baseparm
+            label   "Mipmap Bias"
+            export  none
+        }
+        parm {
+            name    "single_channel"
+            baseparm
+            label   "Single Channel"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "start_channel"
+            baseparm
+            label   "Single Channel"
+            export  none
+        }
+        parm {
+            name    "missing_texture_color"
+            baseparm
+            label   "Missing Texture Color"
+            export  none
+        }
+        parm {
+            name    "ignore_missing_textures"
+            baseparm
+            label   "Ignore Missing Texture Errors"
+            export  none
+        }
+        parm {
+            name    "autotx"
+            baseparm
+            label   "Auto-generate TX Textures"
+            export  none
+        }
     }
 
     group {
-	name	"folder2_1"
-	label	" UV "
+        name    "folder2_1"
+        label   " UV "
 
-	parm {
-	    name	"uvcoords"
-	    baseparm
-	    label	"Custom UVs"
-	    export	none
-	}
-	parm {
-	    name	"uvset"
-	    baseparm
-	    label	"UV Set"
-	    export	none
-	}
-	parm {
-	    name	"soffset"
-	    baseparm
-	    label	"Offset U"
-	    export	none
-	}
-	parm {
-	    name	"toffset"
-	    baseparm
-	    label	"Offset V"
-	    export	none
-	}
-	parm {
-	    name	"sscale"
-	    baseparm
-	    label	"Scale U"
-	    export	none
-	}
-	parm {
-	    name	"tscale"
-	    baseparm
-	    label	"Scale V"
-	    export	none
-	}
-	parm {
-	    name	"swrap"
-	    baseparm
-	    label	"Wrap U"
-	    export	none
-	}
-	parm {
-	    name	"twrap"
-	    baseparm
-	    label	"Wrap V"
-	    export	none
-	}
-	parm {
-	    name	"swap_st"
-	    baseparm
-	    label	"Swap U & V"
-	    export	none
-	}
-	parm {
-	    name	"sflip"
-	    baseparm
-	    label	"Flip U"
-	    export	none
-	}
-	parm {
-	    name	"tflip"
-	    baseparm
-	    label	"Flip V"
-	    export	none
-	}
+        parm {
+            name    "uvcoords"
+            baseparm
+            label   "Custom UVs"
+            export  none
+        }
+        parm {
+            name    "uvset"
+            baseparm
+            label   "UV Set"
+            export  none
+        }
+        parm {
+            name    "soffset"
+            baseparm
+            label   "Offset U"
+            export  none
+        }
+        parm {
+            name    "toffset"
+            baseparm
+            label   "Offset V"
+            export  none
+        }
+        parm {
+            name    "sscale"
+            baseparm
+            label   "Scale U"
+            export  none
+        }
+        parm {
+            name    "tscale"
+            baseparm
+            label   "Scale V"
+            export  none
+        }
+        parm {
+            name    "swrap"
+            baseparm
+            label   "Wrap U"
+            export  none
+        }
+        parm {
+            name    "twrap"
+            baseparm
+            label   "Wrap V"
+            export  none
+        }
+        parm {
+            name    "swap_st"
+            baseparm
+            label   "Swap U & V"
+            export  none
+        }
+        parm {
+            name    "sflip"
+            baseparm
+            label   "Flip U"
+            export  none
+        }
+        parm {
+            name    "tflip"
+            baseparm
+            label   "Flip V"
+            export  none
+        }
     }
 
+    parm {
+        name    "color_family"
+        baseparm
+        label   "Color Space"
+        export  none
+    }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
 Content-Disposition: attachment; filename="hdaroot/Normal.chn"
@@ -1228,17 +1293,18 @@ Content-Type: text/plain
 {
 version 0.8
 folder1	[ 0	locks=0 ]	(	0	0	)
-filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/houdiniNoodle/substance/Mesh_MAT_01_Head_Normal.exr ] 	)
+filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/modsatellite/proj/sourceImages/envisatPannels/solar_1001_Normal.exr ] 	)
 reload	[ 0	locks=0 ]	(	0	)
 multiply	[ 0	locks=0 ]	(	1	1	1	)
 offset	[ 0	locks=0 ]	(	0	0	0	)
+color_family	[ 0	locks=0 ]	(	""	)
 color_space	[ 0	locks=0 ]	(	linear	)
 filter	[ 0	locks=0 ]	(	smart_bicubic	)
 mipmap_bias	[ 0	locks=0 ]	(	0	)
 single_channel	[ 0	locks=0 ]	(	"off"	)
 start_channel	[ 0	locks=0 ]	(	0	)
 missing_texture_color	[ 0	locks=0 ]	(	0	0	0	0	)
-ignore_missing_textures	[ 0	locks=0 ]	(	"off"	)
+ignore_missing_textures	[ 0	locks=0 ]	(	"on"	)
 autotx	[ 0	locks=0 ]	(	"on"	)
 uvcoords	[ 0	locks=0 ]	(	0	0	)
 uvset	[ 0	locks=0 ]	(	""	)
@@ -1262,7 +1328,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -1295,7 +1361,7 @@ inputs
 stat
 {
   create 1515477413
-  modify 1515565366
+  modify 1537489721
   author Administrator@user-PC
   access 0777
 }
@@ -1309,163 +1375,171 @@ Content-Disposition: attachment; filename="hdaroot/Roughness.spareparmdef"
 Content-Type: text/plain
 
     parm {
-	name	"subTex"
-	label	"Substance Texture"
-	type	string
-	default	{ "" }
+        name    "subTex"
+        label   "Substance Texture"
+        type    string
+        default { "" }
     }
     group {
-	name	"folder2"
-	label	"Texture"
+        name    "folder2"
+        label   "Texture"
 
-	parm {
-	    name	"filename"
-	    baseparm
-	    label	"Filename"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"reload"
-	    baseparm
-	    label	"Reload"
-	    export	none
-	}
-	parm {
-	    name	"multiply"
-	    baseparm
-	    label	"Multiply"
-	    export	none
-	}
-	parm {
-	    name	"offset"
-	    baseparm
-	    label	"Offset"
-	    export	none
-	}
-	parm {
-	    name	"color_space"
-	    baseparm
-	    label	"Color Space"
-	    export	none
-	}
-	parm {
-	    name	"filter"
-	    baseparm
-	    label	"Filter"
-	    export	none
-	}
-	parm {
-	    name	"mipmap_bias"
-	    baseparm
-	    label	"Mipmap Bias"
-	    export	none
-	}
-	parm {
-	    name	"single_channel"
-	    baseparm
-	    label	"Single Channel"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"start_channel"
-	    baseparm
-	    label	"Single Channel"
-	    export	none
-	}
-	parm {
-	    name	"missing_texture_color"
-	    baseparm
-	    label	"Missing Texture Color"
-	    export	none
-	}
-	parm {
-	    name	"ignore_missing_textures"
-	    baseparm
-	    label	"Ignore Missing Texture Errors"
-	    export	none
-	}
-	parm {
-	    name	"autotx"
-	    baseparm
-	    label	"Auto-generate TX Textures"
-	    export	none
-	}
+        parm {
+            name    "filename"
+            baseparm
+            label   "Filename"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "reload"
+            baseparm
+            label   "Reload"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "multiply"
+            baseparm
+            label   "Multiply"
+            export  none
+        }
+        parm {
+            name    "offset"
+            baseparm
+            label   "Offset"
+            export  none
+        }
+        parm {
+            name    "color_space"
+            baseparm
+            label   "Color Space"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "filter"
+            baseparm
+            label   "Filter"
+            export  none
+        }
+        parm {
+            name    "mipmap_bias"
+            baseparm
+            label   "Mipmap Bias"
+            export  none
+        }
+        parm {
+            name    "single_channel"
+            baseparm
+            label   "Single Channel"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "start_channel"
+            baseparm
+            label   "Single Channel"
+            export  none
+        }
+        parm {
+            name    "missing_texture_color"
+            baseparm
+            label   "Missing Texture Color"
+            export  none
+        }
+        parm {
+            name    "ignore_missing_textures"
+            baseparm
+            label   "Ignore Missing Texture Errors"
+            export  none
+        }
+        parm {
+            name    "autotx"
+            baseparm
+            label   "Auto-generate TX Textures"
+            export  none
+        }
     }
 
     group {
-	name	"folder2_1"
-	label	" UV "
+        name    "folder2_1"
+        label   " UV "
 
-	parm {
-	    name	"uvcoords"
-	    baseparm
-	    label	"Custom UVs"
-	    export	none
-	}
-	parm {
-	    name	"uvset"
-	    baseparm
-	    label	"UV Set"
-	    export	none
-	}
-	parm {
-	    name	"soffset"
-	    baseparm
-	    label	"Offset U"
-	    export	none
-	}
-	parm {
-	    name	"toffset"
-	    baseparm
-	    label	"Offset V"
-	    export	none
-	}
-	parm {
-	    name	"sscale"
-	    baseparm
-	    label	"Scale U"
-	    export	none
-	}
-	parm {
-	    name	"tscale"
-	    baseparm
-	    label	"Scale V"
-	    export	none
-	}
-	parm {
-	    name	"swrap"
-	    baseparm
-	    label	"Wrap U"
-	    export	none
-	}
-	parm {
-	    name	"twrap"
-	    baseparm
-	    label	"Wrap V"
-	    export	none
-	}
-	parm {
-	    name	"swap_st"
-	    baseparm
-	    label	"Swap U & V"
-	    export	none
-	}
-	parm {
-	    name	"sflip"
-	    baseparm
-	    label	"Flip U"
-	    export	none
-	}
-	parm {
-	    name	"tflip"
-	    baseparm
-	    label	"Flip V"
-	    export	none
-	}
+        parm {
+            name    "uvcoords"
+            baseparm
+            label   "Custom UVs"
+            export  none
+        }
+        parm {
+            name    "uvset"
+            baseparm
+            label   "UV Set"
+            export  none
+        }
+        parm {
+            name    "soffset"
+            baseparm
+            label   "Offset U"
+            export  none
+        }
+        parm {
+            name    "toffset"
+            baseparm
+            label   "Offset V"
+            export  none
+        }
+        parm {
+            name    "sscale"
+            baseparm
+            label   "Scale U"
+            export  none
+        }
+        parm {
+            name    "tscale"
+            baseparm
+            label   "Scale V"
+            export  none
+        }
+        parm {
+            name    "swrap"
+            baseparm
+            label   "Wrap U"
+            export  none
+        }
+        parm {
+            name    "twrap"
+            baseparm
+            label   "Wrap V"
+            export  none
+        }
+        parm {
+            name    "swap_st"
+            baseparm
+            label   "Swap U & V"
+            export  none
+        }
+        parm {
+            name    "sflip"
+            baseparm
+            label   "Flip U"
+            export  none
+        }
+        parm {
+            name    "tflip"
+            baseparm
+            label   "Flip V"
+            export  none
+        }
     }
 
+    parm {
+        name    "color_family"
+        baseparm
+        label   "Color Space"
+        export  none
+    }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
 Content-Disposition: attachment; filename="hdaroot/Roughness.chn"
@@ -1491,17 +1565,18 @@ Content-Type: text/plain
 {
 version 0.8
 folder1	[ 0	locks=0 ]	(	0	0	)
-filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/houdiniNoodle/substance/Mesh_MAT_01_Head_Roughness.exr ] 	)
+filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/modsatellite/proj/sourceImages/envisatPannels/solar_1001_Roughness.exr ] 	)
 reload	[ 0	locks=0 ]	(	0	)
 multiply	[ 0	locks=0 ]	(	1	1	1	)
 offset	[ 0	locks=0 ]	(	0	0	0	)
+color_family	[ 0	locks=0 ]	(	""	)
 color_space	[ 0	locks=0 ]	(	linear	)
 filter	[ 0	locks=0 ]	(	smart_bicubic	)
 mipmap_bias	[ 0	locks=0 ]	(	0	)
 single_channel	[ 0	locks=0 ]	(	"off"	)
 start_channel	[ 0	locks=0 ]	(	0	)
 missing_texture_color	[ 0	locks=0 ]	(	0	0	0	0	)
-ignore_missing_textures	[ 0	locks=0 ]	(	"off"	)
+ignore_missing_textures	[ 0	locks=0 ]	(	"on"	)
 autotx	[ 0	locks=0 ]	(	"on"	)
 uvcoords	[ 0	locks=0 ]	(	0	0	)
 uvset	[ 0	locks=0 ]	(	""	)
@@ -1525,19 +1600,19 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
-Content-Disposition: attachment; filename="hdaroot/Metalness.init"
+Content-Disposition: attachment; filename="hdaroot/Metallic.init"
 Content-Type: text/plain
 
 type = arnold::image
 matchesdef = 0
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
-Content-Disposition: attachment; filename="hdaroot/Metalness.def"
+Content-Disposition: attachment; filename="hdaroot/Metallic.def"
 Content-Type: text/plain
 
 comment ""
@@ -1558,7 +1633,7 @@ inputs
 stat
 {
   create 1515477413
-  modify 1515565366
+  modify 1537490611
   author Administrator@user-PC
   access 0777
 }
@@ -1568,170 +1643,178 @@ exprlanguage python
 end
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
-Content-Disposition: attachment; filename="hdaroot/Metalness.spareparmdef"
+Content-Disposition: attachment; filename="hdaroot/Metallic.spareparmdef"
 Content-Type: text/plain
 
     parm {
-	name	"subTex"
-	label	"Substance Texture"
-	type	string
-	default	{ "" }
+        name    "subTex"
+        label   "Substance Texture"
+        type    string
+        default { "" }
     }
     group {
-	name	"folder2"
-	label	"Texture"
+        name    "folder2"
+        label   "Texture"
 
-	parm {
-	    name	"filename"
-	    baseparm
-	    label	"Filename"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"reload"
-	    baseparm
-	    label	"Reload"
-	    export	none
-	}
-	parm {
-	    name	"multiply"
-	    baseparm
-	    label	"Multiply"
-	    export	none
-	}
-	parm {
-	    name	"offset"
-	    baseparm
-	    label	"Offset"
-	    export	none
-	}
-	parm {
-	    name	"color_space"
-	    baseparm
-	    label	"Color Space"
-	    export	none
-	}
-	parm {
-	    name	"filter"
-	    baseparm
-	    label	"Filter"
-	    export	none
-	}
-	parm {
-	    name	"mipmap_bias"
-	    baseparm
-	    label	"Mipmap Bias"
-	    export	none
-	}
-	parm {
-	    name	"single_channel"
-	    baseparm
-	    label	"Single Channel"
-	    joinnext
-	    export	none
-	}
-	parm {
-	    name	"start_channel"
-	    baseparm
-	    label	"Single Channel"
-	    export	none
-	}
-	parm {
-	    name	"missing_texture_color"
-	    baseparm
-	    label	"Missing Texture Color"
-	    export	none
-	}
-	parm {
-	    name	"ignore_missing_textures"
-	    baseparm
-	    label	"Ignore Missing Texture Errors"
-	    export	none
-	}
-	parm {
-	    name	"autotx"
-	    baseparm
-	    label	"Auto-generate TX Textures"
-	    export	none
-	}
+        parm {
+            name    "filename"
+            baseparm
+            label   "Filename"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "reload"
+            baseparm
+            label   "Reload"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "multiply"
+            baseparm
+            label   "Multiply"
+            export  none
+        }
+        parm {
+            name    "offset"
+            baseparm
+            label   "Offset"
+            export  none
+        }
+        parm {
+            name    "color_space"
+            baseparm
+            label   "Color Space"
+            nolabel
+            export  none
+        }
+        parm {
+            name    "filter"
+            baseparm
+            label   "Filter"
+            export  none
+        }
+        parm {
+            name    "mipmap_bias"
+            baseparm
+            label   "Mipmap Bias"
+            export  none
+        }
+        parm {
+            name    "single_channel"
+            baseparm
+            label   "Single Channel"
+            joinnext
+            export  none
+        }
+        parm {
+            name    "start_channel"
+            baseparm
+            label   "Single Channel"
+            export  none
+        }
+        parm {
+            name    "missing_texture_color"
+            baseparm
+            label   "Missing Texture Color"
+            export  none
+        }
+        parm {
+            name    "ignore_missing_textures"
+            baseparm
+            label   "Ignore Missing Texture Errors"
+            export  none
+        }
+        parm {
+            name    "autotx"
+            baseparm
+            label   "Auto-generate TX Textures"
+            export  none
+        }
     }
 
     group {
-	name	"folder2_1"
-	label	" UV "
+        name    "folder2_1"
+        label   " UV "
 
-	parm {
-	    name	"uvcoords"
-	    baseparm
-	    label	"Custom UVs"
-	    export	none
-	}
-	parm {
-	    name	"uvset"
-	    baseparm
-	    label	"UV Set"
-	    export	none
-	}
-	parm {
-	    name	"soffset"
-	    baseparm
-	    label	"Offset U"
-	    export	none
-	}
-	parm {
-	    name	"toffset"
-	    baseparm
-	    label	"Offset V"
-	    export	none
-	}
-	parm {
-	    name	"sscale"
-	    baseparm
-	    label	"Scale U"
-	    export	none
-	}
-	parm {
-	    name	"tscale"
-	    baseparm
-	    label	"Scale V"
-	    export	none
-	}
-	parm {
-	    name	"swrap"
-	    baseparm
-	    label	"Wrap U"
-	    export	none
-	}
-	parm {
-	    name	"twrap"
-	    baseparm
-	    label	"Wrap V"
-	    export	none
-	}
-	parm {
-	    name	"swap_st"
-	    baseparm
-	    label	"Swap U & V"
-	    export	none
-	}
-	parm {
-	    name	"sflip"
-	    baseparm
-	    label	"Flip U"
-	    export	none
-	}
-	parm {
-	    name	"tflip"
-	    baseparm
-	    label	"Flip V"
-	    export	none
-	}
+        parm {
+            name    "uvcoords"
+            baseparm
+            label   "Custom UVs"
+            export  none
+        }
+        parm {
+            name    "uvset"
+            baseparm
+            label   "UV Set"
+            export  none
+        }
+        parm {
+            name    "soffset"
+            baseparm
+            label   "Offset U"
+            export  none
+        }
+        parm {
+            name    "toffset"
+            baseparm
+            label   "Offset V"
+            export  none
+        }
+        parm {
+            name    "sscale"
+            baseparm
+            label   "Scale U"
+            export  none
+        }
+        parm {
+            name    "tscale"
+            baseparm
+            label   "Scale V"
+            export  none
+        }
+        parm {
+            name    "swrap"
+            baseparm
+            label   "Wrap U"
+            export  none
+        }
+        parm {
+            name    "twrap"
+            baseparm
+            label   "Wrap V"
+            export  none
+        }
+        parm {
+            name    "swap_st"
+            baseparm
+            label   "Swap U & V"
+            export  none
+        }
+        parm {
+            name    "sflip"
+            baseparm
+            label   "Flip U"
+            export  none
+        }
+        parm {
+            name    "tflip"
+            baseparm
+            label   "Flip V"
+            export  none
+        }
     }
 
+    parm {
+        name    "color_family"
+        baseparm
+        label   "Color Space"
+        export  none
+    }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
-Content-Disposition: attachment; filename="hdaroot/Metalness.chn"
+Content-Disposition: attachment; filename="hdaroot/Metallic.chn"
 Content-Type: text/plain
 
 {
@@ -1748,23 +1831,24 @@ return foo" language = python }
   }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
-Content-Disposition: attachment; filename="hdaroot/Metalness.parm"
+Content-Disposition: attachment; filename="hdaroot/Metallic.parm"
 Content-Type: text/plain
 
 {
 version 0.8
 folder1	[ 0	locks=0 ]	(	0	0	)
-filename	[ 8	locks=0 ]	(	[ filename	D:/Documents/houdiniNoodle/substance/Mesh_MAT_01_Head_Metalness.exr ] 	)
+filename	[ 0	locks=0 ]	(	[ filename	D:/Documents/modsatellite/proj/sourceImages/envisatPannels/solar_1001_Metallic.exr ] 	)
 reload	[ 0	locks=0 ]	(	0	)
 multiply	[ 0	locks=0 ]	(	1	1	1	)
 offset	[ 0	locks=0 ]	(	0	0	0	)
+color_family	[ 0	locks=0 ]	(	""	)
 color_space	[ 0	locks=0 ]	(	linear	)
 filter	[ 0	locks=0 ]	(	smart_bicubic	)
 mipmap_bias	[ 0	locks=0 ]	(	0	)
 single_channel	[ 0	locks=0 ]	(	"off"	)
 start_channel	[ 0	locks=0 ]	(	0	)
 missing_texture_color	[ 0	locks=0 ]	(	0	0	0	0	)
-ignore_missing_textures	[ 0	locks=0 ]	(	"off"	)
+ignore_missing_textures	[ 0	locks=0 ]	(	"on"	)
 autotx	[ 0	locks=0 ]	(	"on"	)
 uvcoords	[ 0	locks=0 ]	(	0	0	)
 uvset	[ 0	locks=0 ]	(	""	)
@@ -1782,13 +1866,13 @@ folder2	[ 0	locks=0 ]	(	0	0	)
 }
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
-Content-Disposition: attachment; filename="hdaroot/Metalness.userdata"
+Content-Disposition: attachment; filename="hdaroot/Metallic.userdata"
 Content-Type: text/plain
 
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -1826,7 +1910,7 @@ inputs
 stat
 {
   create 1515478617
-  modify 1515565367
+  modify 1537489722
   author Administrator@user-PC
   access 0777
 }
@@ -1860,7 +1944,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -1898,7 +1982,7 @@ inputs
 stat
 {
   create 1515478625
-  modify 1515565366
+  modify 1537489721
   author Administrator@user-PC
   access 0777
 }
@@ -1908,13 +1992,27 @@ exprlanguage hscript
 end
 
 --HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/bump2d1.chn"
+Content-Type: text/plain
+
+{
+    channel bump_height {
+      lefttype = extend
+      righttype = extend
+      default = 12
+      flags = 0
+      segment { length = 0 value = 12 12 expr = ch(\"../bumpHeight\") }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
 Content-Disposition: attachment; filename="hdaroot/bump2d1.parm"
 Content-Type: text/plain
 
 {
 version 0.8
 bump_map	[ 0	locks=0 ]	(	0	)
-bump_height	[ 0	locks=0 ]	(	1	)
+bump_height	[ 0	locks=0 ]	(	[ bump_height	1 ] 	)
 normal	[ 0	locks=0 ]	(	0	0	0	)
 }
 
@@ -1925,7 +2023,7 @@ Content-Type: text/plain
 {
 	"___Version___":{
 		"type":"string",
-		"value":"16.0.736"
+		"value":"16.5.496"
 	}
 }
 
@@ -1941,7 +2039,7 @@ standard_surface1
 BaseColor
 Normal
 Roughness
-Metalness
+Metallic
 normal_map1
 bump2d1
 
