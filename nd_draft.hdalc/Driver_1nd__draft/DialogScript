@@ -1,0 +1,28 @@
+# Dialog script for nd_draft automatically generated
+
+{
+    name	nd_draft
+    script	nd_draft
+    label	"Nd Draft"
+
+    help {
+	""
+    }
+
+    inputlabel	1	"Sub-Network Input #1"
+
+    parm {
+        name    "execute"
+        baseparm
+        label   "Render"
+        joinnext
+        export  none
+    }
+    parm {
+        name    "renderdialog"
+        baseparm
+        label   "Controls..."
+        nolabel
+        export  none
+    }
+}

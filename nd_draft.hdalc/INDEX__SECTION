@@ -1,0 +1,14 @@
+Operator:     nd_draft
+Label:        Nd Draft
+Path:         oplib:/Driver/nd_draft?Driver/nd_draft
+Icon:         opdef:/Driver/nd_draft?IconImage
+Table:        Driver
+License:      
+Extra:        
+User:         
+Inputs:       1 to 1
+Subnet:       true
+Python:       false
+Empty:        false
+Modified:     Tue May 14 15:01:26 2019
+

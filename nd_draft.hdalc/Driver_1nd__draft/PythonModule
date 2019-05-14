@@ -1,0 +1,33 @@
+import Draft
+from DraftParamParser import ReplaceFilenameHashesWithNumber
+import discordHook.main as dis
+reload(dis)
+
+def findRop():
+    sRGB = Draft.LUT.CreateSRGB()
+    node = hou.node('..')
+    renderNode= node.inputs()[0]
+    sf = int(renderNode.evalParm('f1'))
+    ef = int(renderNode.evalParm('f2'))
+    
+    if renderNode.type().name() == 'Redshift_ROP':
+        file = renderNode.evalParm('RS_outputFileNamePrefix')
+        
+    if renderNode.type().name() == 'opengl':
+        file = renderNode.evalParm('picture')
+        
+    fileSplit = file.split('.')
+    outputPath = '%s.mp4' %fileSplit[0]
+    encoder = Draft.VideoEncoder(outputPath,width=1920, height=1080, quality=80, codec='H264' )
+
+    
+    for currFrame in range( sf, ef+1 ):
+        frameNo = '{0:04d}'.format(currFrame)
+        currFile = ('%s.%s.%s' %(fileSplit[0],frameNo,fileSplit[2]))
+        frame = Draft.Image.ReadFromFile(currFile)
+        if fileSplit[2]=='exr':
+            sRGB.Apply(frame)
+        encoder.EncodeNextFrame( frame )    # Add each frame to the video.    
+    encoder.FinalizeEncoding()    # Finalize and save the resulting video.
+    print('Finished mp4')
+    dis.send(fileSplit[0],outputPath.replace('D:/','http://localhost:8000/'))
