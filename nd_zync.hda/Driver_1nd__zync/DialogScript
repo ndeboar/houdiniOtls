@@ -612,10 +612,34 @@
             range   { 0 10 }
         }
         parm {
+            name    "oF_on"
+            label   "Override Frames"
+            type    toggle
+            joinnext
+            default { "0" }
+        }
+        parm {
+            name    "oF"
+            label   "oF"
+            type    float
+            nolabel
+            size    3
+            default { "0" "10" "1" }
+            disablewhen "{ oF_on == 0 }"
+            range   { 0 10 }
+        }
+        parm {
             name    "sepparm2"
             label   "Separator"
             type    separator
             default { "" }
+        }
+        parm {
+            name    "ffDepend"
+            label   "First Frame Dependencies"
+            type    toggle
+            joinnext
+            default { "0" }
         }
         parm {
             name    "skip_download"

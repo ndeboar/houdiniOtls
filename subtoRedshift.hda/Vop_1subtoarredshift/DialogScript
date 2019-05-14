@@ -22,9 +22,15 @@
     }
 
     parm {
-	name	"texPath"
-	label	"Texture Path"
-	type	image
-	default	{ "" }
+        name    "udim"
+        label   "udim"
+        type    toggle
+        default { "0" }
+    }
+    parm {
+        name    "texPath"
+        label   "Texture Path"
+        type    image
+        default { "" }
     }
 }

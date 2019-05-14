@@ -2,6 +2,9 @@ import zync_houdini as zh
 import os.path
 import htoa
 import zync as z
+import re
+import glob
+
 
 #creates an instance of the zync connection, rather than creating a new one
 class nd_ZyncConnection(object):
@@ -32,7 +35,47 @@ class nd_ZyncConnection(object):
 def login(**kwargs):
     zh.ZyncConnection().login()
     zh.update_node_login(kwargs['node'])
+    
+    
+def nd_get_dependencies(frame_begin, frame_end, step, firstFrame):
+    """Finds all file dependencies in the project for specific range of frames.
 
+    Args:
+      frame_begin: First frame (inclusive) of range to render.
+      frame_end: Last frame (inclusive) of range to render.
+      step: Frame range step.
+
+    Returns:
+      set of str, List of detected dependencies.
+    """
+    refs = hou.fileReferences()
+    if firstFrame:
+        frames = xrange(int(1), int(1) + 1, int(1))
+    else:
+        frames = xrange(int(frame_begin), int(frame_end) + 1, int(step))
+    result = set()
+
+    wildcards = ['<udim>', '$SF']
+    wildcard_regex = [re.compile(re.escape(wc), re.IGNORECASE)
+                      for wc in wildcards]
+
+    for frame in frames:
+      for parm, _ in refs:
+        if parm:
+          file_path = parm.evalAtFrame(frame)
+          if file_path in result:
+            continue
+          for wildcard in wildcard_regex:
+            file_path = wildcard.sub('*', file_path)
+          for file in glob.glob(file_path):
+            try:
+              if hou.findFile(file) and file not in result:
+                result.add(file)
+            except hou.OperationFailed:
+              pass        
+    return result
+    
+    
 def submit(**kwargs):
     if hou.hipFile.hasUnsavedChanges():
         save_file_response = hou.ui.displayMessage(
@@ -44,7 +87,13 @@ def submit(**kwargs):
             hou.hipFile.save()
     
     node = kwargs['node']
+
+    
     houJob = zh.ZyncHoudiniJob(node)
+    #monkey patch zh to change the way dependices work
+    #houJob.get_raw_params = nd_get_raw_params
+    #houJob.get_dependencies = nd_get_dependencies
+    
     zyncCon = nd_ZyncConnection()
     jobs = []
         
@@ -54,9 +103,11 @@ def submit(**kwargs):
         outDir = os.path.split(outDir)[0]
         outFile = arRop.parm('ar_picture').unexpandedString()
         outFile = os.path.split(outFile)[1]
-        frames = arRop.parmTuple('f').eval()        
+        if node.evalParm('oF_on'):
+            frames = node.parmTuple('oF').eval()
+        else:
+            frames = arRop.parmTuple('f').eval()        
         houdini_version = hou.applicationVersion()
-        
         submitDict = {'frame_begin': frames[0],
         'num_instances': node.evalParm('num_instances'),
         'skip_download': node.evalParm('skip_download'),
@@ -70,7 +121,7 @@ def submit(**kwargs):
         'upload_only': node.evalParm('upload_only'),
         'proj_name': node.evalParm('proj_name'),
         'scene_info': {'houdini_version': 'Houdini%d.%d' % (houdini_version[0], houdini_version[1]),
-        'dependencies': list(houJob.get_dependencies(frames[0], frames[1], frames[2])),
+        'dependencies': list(nd_get_dependencies(frames[0], frames[1], frames[2], node.evalParm('ffDepend'))),
         'renderer_version': htoa.__version__,
         'houdini_build_version': '%d.%d.%d' % houdini_version},
         'plugin_version': zh.__version__,
@@ -85,7 +136,6 @@ def submit(**kwargs):
         arRop.parm('ar_log_verbosity').set('detailed') #enable better logging
         arRop.parm('ar_exr_autocrop').set(1)
         zyncCon.submit_job(houJob.scene_path(), submitDict)
-    #hou.ui.displayMessage(text='Job submitted to Zync.')
 
 
 
@@ -99,7 +149,7 @@ def chooseProject(**kwargs):
         title='Projects',
         num_visible_rows=len(projList))
     if proj:
-    	node.parm('proj_name').set(projList[proj[0]]['name'])
+        node.parm('proj_name').set(projList[proj[0]]['name'])
 
 def chooseInstance(**kwargs):
     node = kwargs['node']
@@ -111,5 +161,5 @@ def chooseInstance(**kwargs):
         title='Instances',
         num_visible_rows=len(machines))
     if machine:
-    	machine = machine[0]
-    	node.parm('instance_type').set(machines.keys()[machine])
+        machine = machine[0]
+        node.parm('instance_type').set(machines.keys()[machine])
