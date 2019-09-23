@@ -1,6 +1,6 @@
 import Draft
 from DraftParamParser import ReplaceFilenameHashesWithNumber
-import discordHook.main as dis
+#import discordHook.main as dis
 import os.path as op
 
 def findRop():
@@ -24,7 +24,7 @@ def findRop():
         frameNo = '{0:04d}'.format(currFrame)
         currFile = ('%s/%s' %(op.dirname(file),op.basename(file).replace(padString,frameNo)))
         frame = Draft.Image.ReadFromFile(currFile)
-        if op.splitext(file)[1]=='exr':
+        if op.splitext(file)[1]=='.exr':
             sRGB.Apply(frame)
         encoder.EncodeNextFrame( frame )    # Add each frame to the video.    
     encoder.FinalizeEncoding()    # Finalize and save the resulting video.
