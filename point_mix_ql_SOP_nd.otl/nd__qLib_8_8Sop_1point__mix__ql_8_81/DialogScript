@@ -1,0 +1,114 @@
+# Dialog script for nd_qLib::point_mix_ql::1 automatically generated
+
+{
+    name	nd_qLib::point_mix_ql::1
+    script	nd_qLib::point_mix_ql::1
+    label	"Point Mix qL ND"
+
+    help {
+	""
+    }
+
+    inputlabel	1	"Sub-Network Input #1"
+    inputlabel	2	"Sub-Network Input #2"
+    inputlabel	3	"Sub-Network Input #3"
+    inputlabel	4	"Sub-Network Input #4"
+
+    parm {
+        name    "group"
+        label   "Group"
+        type    string
+        default { "" }
+        menutoggle {
+            [ "opmenu -l DO_POINT_MIX vex_group" ]
+        }
+        range   { 0 1 }
+        parmtag { "autoscope" "0000000000000000" }
+        bindselector points "Points to Use"
+            "Select the points to use and press Enter to complete"
+            0 1 0xfff0ff77 0 grouptype 0
+    }
+    parm {
+        name    "mix_attribs"
+        label   "Attributes to Mix"
+        type    string
+        default { "P" }
+        help    "Attributes to mix."
+        menutoggle {
+            [ "r = []" ]
+            [ "" ]
+            [ "try:" ]
+            [ "    if hou.pwd().parm(\"first\").eval():" ]
+            [ "        attrs = hou.pwd().inputs()[1].geometry().pointAttribs()" ]
+            [ "    else:" ]
+            [ "        attrs = hou.pwd().geometry().pointAttribs()" ]
+            [ "    attrs = [ a.name() for a in attrs if a.dataType() is not hou.attribData.String ]" ]
+            [ "    " ]
+            [ "    for a in attrs:" ]
+            [ "        r.append(a)" ]
+            [ "        r.append(a)" ]
+            [ "except:" ]
+            [ "    pass" ]
+            [ "" ]
+            [ "return r" ]
+            language python
+        }
+        range   { 0 1 }
+    }
+    parm {
+        name    "ctrl_attrib"
+        label   "Control Attrib"
+        type    string
+        joinnext
+        default { "weight" }
+        menureplace {
+            [ "r = []" ]
+            [ "" ]
+            [ "try:" ]
+            [ "    if hou.pwd().parm(\"first\").eval():" ]
+            [ "        attrs = hou.pwd().inputs()[1].geometry().pointAttribs()" ]
+            [ "    else:" ]
+            [ "        attrs = hou.pwd().geometry().pointAttribs()" ]
+            [ "    attrs = [ a.name() for a in attrs if a.size()==1 and a.dataType() is not hou.attribData.String ]" ]
+            [ "    " ]
+            [ "    for a in attrs:" ]
+            [ "        r.append(a)" ]
+            [ "        r.append(a)" ]
+            [ "except:" ]
+            [ "    pass" ]
+            [ "" ]
+            [ "return r" ]
+            [ "" ]
+            [ "" ]
+            language python
+        }
+        range   { 0 1 }
+        parmtag { "autoscope" "0000000000000000" }
+        parmtag { "parmvop" "1" }
+    }
+    parm {
+        name    "first"
+        label   "On"
+        type    integer
+        default { "0" }
+        menu {
+            "0" "1st Input"
+            "1" "2nd Input"
+        }
+        range   { 0! 1! }
+    }
+    parm {
+        name    "invert"
+        label   "Invert"
+        type    toggle
+        default { "0" }
+        range   { 0 1 }
+    }
+    parm {
+        name    "envelope"
+        label   "Envelope"
+        type    float
+        default { "1" }
+        range   { 0! 1! }
+    }
+}

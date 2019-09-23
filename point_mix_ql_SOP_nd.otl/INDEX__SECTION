@@ -1,0 +1,14 @@
+Operator:     nd_qLib::point_mix_ql::1
+Label:        Point Mix qL ND
+Path:         oplib:/nd_qLib::Sop/point_mix_ql::1?nd_qLib::Sop/point_mix_ql::1
+Icon:         VOP_mix
+Table:        Sop
+License:      
+Extra:        
+User:         
+Inputs:       2 to 2
+Subnet:       true
+Python:       false
+Empty:        false
+Modified:     Mon Sep 23 14:13:12 2019
+
